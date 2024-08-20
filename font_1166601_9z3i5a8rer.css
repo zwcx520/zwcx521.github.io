@@ -1,0 +1,339 @@
+@font-face {
+  font-family: "iconfontua"; /* Project id 1166601 */
+  src: url('//at.alicdn.com/t/c/font_1166601_9z3i5a8rer.woff2?t=1677388430918') format('woff2'),
+       url('//at.alicdn.com/t/c/font_1166601_9z3i5a8rer.woff?t=1677388430918') format('woff'),
+       url('//at.alicdn.com/t/c/font_1166601_9z3i5a8rer.ttf?t=1677388430918') format('truetype');
+}
+
+.iconfontua {
+  font-family: "iconfontua" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iphone1:before {
+  content: "\ec93";
+}
+
+.icon-sanxing:before {
+  content: "\e614";
+}
+
+.icon-sanxing1:before {
+  content: "\e654";
+}
+
+.icon-mac-os:before {
+  content: "\e657";
+}
+
+.icon-vivaldi-splash:before {
+  content: "\e60d";
+}
+
+.icon-facebook1:before {
+  content: "\e616";
+}
+
+.icon-openbsd:before {
+  content: "\e61c";
+}
+
+.icon-chromium:before {
+  content: "\e60e";
+}
+
+.icon-facebook:before {
+  content: "\e617";
+}
+
+.icon-instagram:before {
+  content: "\e87f";
+}
+
+.icon-brave:before {
+  content: "\e624";
+}
+
+.icon-tesla:before {
+  content: "\e613";
+}
+
+.icon-gnuicecat:before {
+  content: "\eba5";
+}
+
+.icon-netscape:before {
+  content: "\e648";
+}
+
+.icon-browser:before {
+  content: "\e606";
+}
+
+.icon-kindle:before {
+  content: "\e8a7";
+}
+
+.icon-puffin:before {
+  content: "\ef27";
+}
+
+.icon-huawei:before {
+  content: "\e82e";
+}
+
+.icon-douyin:before {
+  content: "\e8db";
+}
+
+.icon-dingding:before {
+  content: "\e672";
+}
+
+.icon-suningyigou:before {
+  content: "\e68f";
+}
+
+.icon-douban:before {
+  content: "\e610";
+}
+
+.icon-alipay:before {
+  content: "\e618";
+}
+
+.icon-taobao:before {
+  content: "\e755";
+}
+
+.icon-qiyeweixin:before {
+  content: "\e61a";
+}
+
+.icon-oppo:before {
+  content: "\e65f";
+}
+
+.icon-vivaldi:before {
+  content: "\e603";
+}
+
+.icon-jiandansousuo-1:before {
+  content: "\e94f";
+}
+
+.icon-browser-23451:before {
+  content: "\e609";
+}
+
+.icon-location-arrow:before {
+  content: "\e6c2";
+}
+
+.icon-map-pin:before {
+  content: "\e6c5";
+}
+
+.icon-map-marker:before {
+  content: "\e6c6";
+}
+
+.icon-search:before {
+  content: "\e6f2";
+}
+
+.icon-safari:before {
+  content: "\e6ef";
+}
+
+.icon-browser-2345:before {
+  content: "\e94e";
+}
+
+.icon-kuakeliulanqi:before {
+  content: "\e78e";
+}
+
+.icon-browser-360:before {
+  content: "\e94a";
+}
+
+.icon-opera:before {
+  content: "\e6d4";
+}
+
+.icon-edge:before {
+  content: "\e66a";
+}
+
+.icon-kuan-copy:before {
+  content: "\e949";
+}
+
+.icon-MacOS:before {
+  content: "\e605";
+}
+
+.icon-linux:before {
+  content: "\e6c1";
+}
+
+.icon-chrome:before {
+  content: "\e658";
+}
+
+.icon-firefox:before {
+  content: "\e67f";
+}
+
+.icon-globe:before {
+  content: "\e696";
+}
+
+.icon-internet-explorer:before {
+  content: "\e6b7";
+}
+
+.icon-qq:before {
+  content: "\e6e4";
+}
+
+.icon-wechat:before {
+  content: "\e738";
+}
+
+.icon-weibo1:before {
+  content: "\e737";
+}
+
+.icon-windows:before {
+  content: "\e73e";
+}
+
+.icon-browser-shenma:before {
+  content: "\e94d";
+}
+
+.icon-iphone:before {
+  content: "\e62e";
+}
+
+.icon-ipad:before {
+  content: "\e7a7";
+}
+
+.icon-ipod:before {
+  content: "\e761";
+}
+
+.icon-win8:before {
+  content: "\e70c";
+}
+
+.icon-iconchromeos:before {
+  content: "\e80b";
+}
+
+.icon-iconmacos:before {
+  content: "\e80d";
+}
+
+.icon-xiaomi:before {
+  content: "\e75d";
+}
+
+.icon-win:before {
+  content: "\e6b6";
+}
+
+.icon-debian:before {
+  content: "\e643";
+}
+
+.icon-liulanqi-jisu:before {
+  content: "\e940";
+}
+
+.icon-liulanqi-aoyou:before {
+  content: "\e946";
+}
+
+.icon-liulanqi-sougou:before {
+  content: "\e947";
+}
+
+.icon-ucliulanqi:before {
+  content: "\e71e";
+}
+
+.icon-browser-baidu:before {
+  content: "\e94b";
+}
+
+.icon-liebaoliulanqi:before {
+  content: "\e721";
+}
+
+.icon-coolapk:before {
+  content: "\e66b";
+}
+
+.icon-QQliulanqi:before {
+  content: "\e7c6";
+}
+
+.icon-win3:before {
+  content: "\e604";
+}
+
+.icon-macosdeicon:before {
+  content: "\e6ba";
+}
+
+.icon-theworld:before {
+  content: "\e62d";
+}
+
+.icon-weibo:before {
+  content: "\e62f";
+}
+
+.icon-meizu:before {
+  content: "\e612";
+}
+
+.icon-yandex:before {
+  content: "\e6e0";
+}
+
+.icon-win2:before {
+  content: "\e601";
+}
+
+.icon-winphone:before {
+  content: "\e7c5";
+}
+
+.icon-android:before {
+  content: "\e797";
+}
+
+.icon-ubuntu:before {
+  content: "\e602";
+}
+
+.icon-win_xp:before {
+  content: "\e600";
+}
+
+.icon-fedora:before {
+  content: "\e611";
+}
+
+.icon-VIVO:before {
+  content: "\e622";
+}
+

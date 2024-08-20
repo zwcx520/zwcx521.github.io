@@ -1,0 +1,2485 @@
+<!DOCTYPE html>
+<html class="small-scroll-bar no-js theme-dark  bg cool-transparent" lang="zh-cmn-Hans">
+	<script src="chameleon.js" charset="utf-8" async="">
+	</script>
+	<script src="hm.js">
+	</script>
+	<head>
+		<link rel="shortcut icon" href="4.ico" type="image/x-icon">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--IE 8浏览器的页面渲染方式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<!--默认使用极速内核：针对国内浏览器产商-->
+		<meta name="renderer" content="webkit">
+		<!--chrome Android 地址栏颜色-->
+		<meta name="theme-color" content="#aaffff">
+		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">-->
+		<!-- <meta name="mobile-web-app-capable" content="yes">-->
+		<!-- <meta name="apple-mobile-web-app-capable" content="yes">-->
+		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="default">-->
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>
+			~颖~博客 - 记录点滴生活
+		</title>
+		<link rel="icon" type="image/ico" href="files/png/favicon.ico">
+		<meta name="description" content="记录点滴生活">
+		<meta name="keywords" content="~颖~博客,typecho,php,blog,NAS,群晖,openwrt,路由器刷机,矿渣刷机,路由器,网络储存,智能控制器,蓝德控制器,远驱控制器,电动车,">
+		<meta name="generator" content="Typecho 1.2.1">
+		<meta name="template" content="handsome">
+		<link rel="pingback" href="action/xmlrpc">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="action/xmlrpc?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="action/xmlrpc?wlw">
+		<link rel="alternate" type="application/rss+xml" title="~颖~博客 » RSS 2.0"
+		href="feed/">
+		<link rel="alternate" type="application/rdf+xml" title="~颖~博客 » RSS 1.0"
+		href="feed/rss/">
+		<link rel="alternate" type="application/atom+xml" title="~颖~博客 » ATOM 1.0"
+		href="feed/atom/">
+		<link rel="stylesheet" type="text/css" href="font_1166601_9z3i5a8rer.css">
+		<link rel="stylesheet" type="text/css" href="useragent.css">
+		<script type="text/javascript">
+			window['LocalConst'] = {
+				//base
+				BASE_SCRIPT_URL: 'usr/themes/handsome/',
+				BLOG_URL: '',
+				BLOG_URL_N: 'www.3tt.top',
+				STATIC_PATH: 'usr/themes/handsome/assets/',
+				BLOG_URL_PHP: '',
+				VDITOR_CDN: 'cdn.jsdelivr.net/npm/vditor@3.9.4',
+				ECHART_CDN: 'lf6-cdn-tos.bytecdntp.com/cdn/expire-5-y/echarts/4.5.0',
+				HIGHLIGHT_CDN: 'lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/10.7.3',
+
+				MATHJAX_SVG_CDN: 'cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.min.js',
+				THEME_VERSION: '9.2.120230801501',
+				THEME_VERSION_PRO: '9.2.1',
+				DEBUG_MODE: '0',
+
+				//comment
+				COMMENT_NAME_INFO: '必须填写昵称或姓名',
+				COMMENT_EMAIL_INFO: '必须填写电子邮箱地址',
+				COMMENT_URL_INFO: '必须填写网站或者博客地址',
+				COMMENT_EMAIL_LEGAL_INFO: '邮箱地址不合法',
+				COMMENT_URL_LEGAL_INFO: '网站或者博客地址不合法',
+				COMMENT_CONTENT_INFO: '必须填写评论内容',
+				COMMENT_SUBMIT_ERROR: '提交失败，请重试！',
+				COMMENT_CONTENT_LEGAL_INFO: '无法获取当前评论(评论已复制到剪切板)，可能原因如下：',
+				COMMENT_NOT_IN_FIRST_PAGE: '尝试请前往评论第一页查看',
+				COMMENT_NOT_BELONG_CURRENT_TAG: '当前评论不属于该标签，请关闭标签筛选后查看',
+				COMMENT_NO_EMAIL: '如果没有填写邮箱则进入审核队列',
+				COMMENT_PAGE_CACHED: '页面如果被缓存无法显示最新评论',
+				COMMENT_BLOCKED: '评论可能被拦截且无反馈信息',
+				COMMENT_AJAX_ERROR: '评论请求失败',
+				COMMENT_TITLE: '评论通知',
+				STAR_SUCCESS: '点赞成功',
+				STAR_REPEAT: '您已点赞',
+				STAR_ERROR_NETWORK: '点赞请求失败',
+				STAR_ERROR_CODE: '点赞返回未知错误码',
+				COOKIE_PREFIX: '99e177ebe2f48fddfdbe52a91f2e81ca',
+				COOKIE_PATH: '/',
+
+				//login
+				LOGIN_TITLE: '登录通知',
+				REGISTER_TITLE: '注册通知',
+				LOGIN_USERNAME_INFO: '必须填写用户名',
+				LOGIN_PASSWORD_INFO: '请填写密码',
+				REGISTER_MAIL_INFO: '请填写邮箱地址',
+				LOGIN_SUBMIT_ERROR: '登录失败，请重新登录',
+				REGISTER_SUBMIT_ERROR: '注册失败，请稍后重试',
+				LOGIN_SUBMIT_INFO: '用户名或者密码错误，请重试',
+				LOGIN_SUBMIT_SUCCESS: '登录成功',
+				REGISTER_SUBMIT_SUCCESS: '注册成功，您的密码是：',
+				CLICK_TO_REFRESH: '点击以刷新页面',
+				PASSWORD_CHANGE_TIP: '初始密码仅显示一次，可在管理后台修改密码',
+				LOGOUT_SUCCESS_REFRESH: '退出成功，正在刷新当前页面',
+
+				LOGOUT_ERROR: '退出失败，请重试',
+				LOGOUT_SUCCESS: '退出成功',
+				SUBMIT_PASSWORD_INFO: '密码错误，请重试',
+				SUBMIT_TIME_MACHINE: '发表新鲜事',
+				REPLY_TIME_MACHINE: '回应',
+
+				//comment
+				ChANGYAN_APP_KEY: '',
+				CHANGYAN_CONF: '',
+
+				COMMENT_SYSTEM: '0',
+				COMMENT_SYSTEM_ROOT: '0',
+				COMMENT_SYSTEM_CHANGYAN: '1',
+				COMMENT_SYSTEM_OTHERS: '2',
+				EMOJI: '表情',
+				COMMENT_NEED_EMAIL: '1',
+				COMMENT_NEED_URL: '0',
+				COMMENT_REJECT_PLACEHOLDER: '居然什么也不说，哼',
+				COMMENT_PLACEHOLDER: '说点什么吧……',
+
+				//pjax
+				IS_PJAX: '1',
+				IS_PAJX_COMMENT: '1',
+				PJAX_ANIMATE: 'default',
+				PJAX_TO_TOP: 'auto',
+				TO_TOP_SPEED: '100',
+
+				USER_COMPLETED: {
+					"data": ""
+				},
+				VDITOR_COMPLETED: {
+					"data": ""
+				},
+
+				//ui
+				OPERATION_NOTICE: '操作通知',
+				SCREENSHOT_BEGIN: '正在生成当前页面截图……',
+				SCREENSHOT_NOTICE: '点击顶部下载按钮保存当前卡片',
+				SCREENSHORT_ERROR: '由于图片跨域原因导致截图失败',
+				SCREENSHORT_SUCCESS: '截图成功',
+
+				//music
+				MUSIC_NOTICE: '播放通知',
+				MUSIC_FAILE: '当前音乐地址无效，自动为您播放下一首',
+				MUSIC_FAILE_END: '当前音乐地址无效',
+				MUSIC_LIST_SUCCESS: '歌单歌曲加载成功',
+				MUSIC_AUTO_PLAY_NOTICE: "即将自动播放，点击<a class='stopMusic'>停止播放</a>",
+				MUSIC_API: 'action/handsome-meting-api?server=:server&type=:type&id=:id&auth=:auth&r=:r',
+				MUSIC_API_PARSE: 'action/handsome-meting-api?do=parse',
+
+				//tag
+				EDIT: '编辑',
+				DELETE: '删除',
+				OPERATION_CONFIRMED: '确认',
+				OPERATION_CANCELED: '取消',
+
+				TAG_EDIT_TITLE: '编辑提示',
+				TAG_EDIT_DESC: '请输入修改后的标签名称（如果输入标签名称已存在，则会合并这两个标签）：',
+				TAG_DELETE_TITLE: '删除提示',
+				TAG_DELETE_DESC: '确认要删除该标签吗，删除该标签的同时会删除与该标签绑定的评论列表',
+
+				CROSS_DELETE_DESC: '确认删除该条时光机吗？将无法恢复',
+
+				//option
+				TOC_TITLE: '文章目录',
+				HEADER_FIX: '固定头部',
+				ASIDE_FIX: '固定导航',
+				ASIDE_FOLDED: '折叠导航',
+				ASIDE_DOCK: '置顶导航',
+				CONTAINER_BOX: '盒子模型',
+				DARK_MODE: '深色模式',
+				DARK_MODE_AUTO: '深色模式（自动）',
+				DARK_MODE_FIXED: '深色模式（固定）',
+				EDITOR_CHOICE: 'origin',
+				NO_LINK_ICO: '',
+				NO_SHOW_RIGHT_SIDE_IN_POST: '',
+
+				CDN_NAME: '',
+				LAZY_LOAD: '1',
+				PAGE_ANIMATE: '1',
+				THEME_COLOR: '14',
+				THEME_COLOR_EDIT: 'light-light-light',
+				THEME_HEADER_FIX: '1',
+				THEME_ASIDE_FIX: '1',
+				THEME_ASIDE_FOLDED: '',
+				THEME_ASIDE_DOCK: '',
+				THEME_CONTAINER_BOX: '1',
+				THEME_HIGHLIGHT_CODE: '1',
+				THEME_TOC: '1',
+				THEME_DARK_MODE: 'auto',
+
+				THEME_DARK_MODE_VALUE: 'auto',
+				SHOW_SETTING_BUTTON: '1',
+
+				THEME_DARK_HOUR: '18',
+				THEME_LIGHT_HOUR: '6',
+				THUMB_STYLE: 'normal',
+				AUTO_READ_MODE: '',
+				SHOW_LYRIC: '',
+				AUTO_SHOW_LYRIC: '1',
+				//代码高亮
+				CODE_STYLE_LIGHT: 'mac_light',
+				CODE_STYLE_DARK: 'mac_dark',
+				THEME_POST_CONTENT: '2',
+				//other
+				OFF_SCROLL_HEIGHT: '55',
+				SHOW_IMAGE_ALT: '1',
+				USER_LOGIN: '',
+				USE_CACHE: '',
+				POST_SPEECH: '1',
+				POST_MATHJAX: '',
+				SHOW_FOOTER: '1',
+				IS_TRANSPARENT: '1',
+				LOADING_IMG: 'usr/themes/handsome/assets/img/loading.svg',
+				PLUGIN_READY: '1',
+				PLUGIN_URL: 'blog.7pp.top/usr/plugins',
+				FIRST_SCREEN_ANIMATE: '',
+				RENDER_LANG: 'zh_CN',
+				SERVICE_WORKER_INSTALLED: false,
+				CLOSE_LEFT_RESIZE: '',
+				CLOSE_RIGHT_RESIZE: '',
+				CALENDAR_GITHUB: '',
+				LATEST_POST_TIME: '1724030237',
+				LATEST_TIME_COMMENT_TIME: '1723264945',
+				LEFT_LOCATION: '1',
+
+				INPUT_NEW_TAG: '输入结束后加空格创建新标签'
+			};
+
+			function clearCache(needRefresh = false) {
+				window.caches && caches.keys && caches.keys().then(function(keys) {
+					keys.forEach(function(key) {
+						console.log("delete cache", key);
+						caches.delete(key);
+						if (needRefresh) {
+							window.location.reload();
+						}
+					});
+				});
+			}
+
+			function unregisterSW() {
+				navigator.serviceWorker.getRegistrations().then(function(registrations) {
+					for (var index in registrations) {
+						// 清除缓存
+						registrations[index].unregister();
+					}
+				});
+			}
+
+			function registerSW() {
+				navigator.serviceWorker.register(LocalConst.BLOG_URL + 'sw.min.js?v=9.2.120230801501').then(function(reg) {
+					if (reg.active) {
+						LocalConst.SERVICE_WORKER_INSTALLED = true;
+					}
+				}).
+				catch(function(error) {
+					console.log('cache failed with ' + error); // registration failed
+				});
+			}
+
+			if ('serviceWorker' in navigator) {
+				const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
+				if (LocalConst.USE_CACHE && !isSafari) { //safari的sw兼容性较差目前关闭
+					registerSW();
+				} else {
+					unregisterSW();
+					clearCache();
+				}
+			}
+		</script>
+		<!-- 第三方CDN加载CSS -->
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<!-- 本地css静态资源 -->
+		<link rel="stylesheet" href="function.min.css" type="text/css">
+		<link rel="stylesheet" href="handsome.min.css" type="text/css">
+		<link id="theme_dark_css" rel="stylesheet" type="text/css" href="dark.min.css">
+		<!--主题组件css文件加载-->
+		<style>
+			.cool-transparent .app:before { background-color: rgba(0,0,0,0.5) !important;
+			} @supports (-webkit-backdrop-filter:none) or (backdrop-filter:none) {
+			#footer{ -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);
+			} .right_panel.panel{ background-color: rgba(255, 255, 255, 0.3); -webkit-backdrop-filter:
+			blur(5px); backdrop-filter: blur(5px); } .app-aside-fix #aside #left_footer{
+			-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); } .modal-content{
+			background: rgba(0,0,0, 0.14); -webkit-backdrop-filter: blur(5px); backdrop-filter:
+			blur(5px); } @media (max-width: 767px) { /*.navbar-collapse{*/ /* -webkit-backdrop-filter:
+			blur(5px);*/ /* backdrop-filter: blur(5px);*/ /*}*/ #handsome_global_player
+			.aplayer-lrc{ /*bottom: -60vh;*/ } #header{ -webkit-backdrop-filter: blur(5px);
+			backdrop-filter: blur(5px); } } @media (min-width: 767px) { #handsome_global_player
+			.aplayer-list{ background: rgba(0,0,0, 0.14); -webkit-backdrop-filter:
+			blur(5px); backdrop-filter: blur(5px); color: #fff; } .dropdown-menu {
+			background: rgba(0,0,0, 0.14); -webkit-backdrop-filter: blur(5px); backdrop-filter:
+			blur(5px); } .app-aside-dock .app-aside .navi > ul > li .nav-sub{ background:
+			rgba(0,0,0, 0.14); -webkit-backdrop-filter: blur(5px); backdrop-filter:
+			blur(5px); } } }
+		</style>
+		<!--引入英文字体文件-->
+		<style type="text/css">
+			html.bg { background: url(blog.7pp.top/files/bj/bj1.webp) center center
+			no-repeat no-repeat fixed #6A6B6F;background-size: cover; } .cool-transparent
+			.off-screen+#content { background: url(blog.7pp.top/files/bj/bj1.webp)
+			center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+			} @media (max-width:767px){ html.bg { background: url(blog.7pp.top/files/bj/bj1.webp)
+			center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+			} .cool-transparent .off-screen+#content { background: url(blog.7pp.top/files/bj/bj1.webp)
+			center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+			} } /*文章美化*/ header.bg-light.lter.wrapper-md { text-align: center; } header.bg-light.lter.wrapper-md
+			{ text-align: center; } .text-muted.post-item-foot-icon.text-ellipsis.list-inline
+			{ text-align: center; background-color: #light; } .index-post-title a:hover
+			{ color: #2ebaae; } .index-post-title a:hover { color: #2ebaae; } /*头像呼吸光环和鼠标悬停旋转放大*/
+			.img-full { width: 100px; border-radius: 50%; animation: light 4s ease-in-out
+			infinite; transition: 0.5s; } .img-full:hover { transform: scale(1.15)
+			rotate(720deg); } @keyframes light { 0% { box-shadow: 0 0 4px #f00; } 25%
+			{ box-shadow: 0 0 16px #0f0; } 50% { box-shadow: 0 0 4px #00f; } 75% {
+			box-shadow: 0 0 16px #0f0; } 100% { box-shadow: 0 0 4px #f00; } } /* logo扫光开始
+			*/ .navbar-brand{position:relative;overflow:hidden;margin: 0px 0 0 0px;}.navbar-brand:before{content:"";
+			position: absolute; left: -665px; top: -460px; width: 200px; height: 15px;
+			background-color: rgba(255,255,255,.5); -webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform:
+			rotate(-45deg); transform: rotate(-45deg); -webkit-animation: searchLights
+			6s ease-in 0s infinite; -o-animation: searchLights 6s ease-in 0s infinite;
+			animation: searchLights 6s ease-in 0s infinite;}@-moz-keyframes searchLights{50%{left:
+			-100px; top: 0;} 65%{left: 120px; top: 100px;}}@keyframes searchLights{40%{left:
+			-100px; top: 0;} 60%{left: 120px; top: 100px;} 80%{left: -100px; top: 0px;}}
+			/*logo扫光结束*/ /*博客首页、文章标题栏加粗*/ .font-thin { font-weight: 500; } /*手机不显示标签云和热门*/
+			@media (max-width:767px) { #tabs-4,#tag_cloud-2 { display: none; } }#aside
+			.wrapper:hover { background: url(usr/themes/handsome/assets/img/snow.gif);
+			background-size: cover; color: #999; }
+		</style>
+		<!--全站jquery-->
+		<script src="jquery.min.js">
+		</script>
+		<script>
+			if (LocalConst.USE_CACHE && !window.jQuery) {
+				console.log("jQuery is Bad", document.cookie.indexOf("error_cache_refresh"));
+				if (document.cookie && document.cookie.indexOf("error_cache_refresh") === -1) { //半个小时内没有刷新过
+					console.log("jQuery is Bad，we need clear cache,retry refresh");
+					document.cookie = "error_cache_refresh=1;max-age=1800;path=/";
+					clearCache(true);
+					if ('serviceWorker' in navigator) {
+						//todo 尝试注销sw后再启用sw
+					}
+				}
+			}
+		</script>
+		<!--网站统计代码-->
+		<script>
+			var _hmt = _hmt || []; (function() {
+				var hm = document.createElement("script");
+				hm.src = "hm.baidu.com/hm.js?18844726396eebaa07b085b83edb6903";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<link id="vditorHljsStyle" rel="stylesheet" type="text/css" href="dracula.min.css">
+		<script src="highlight.min.js" async="" id="highlight_js_">
+		</script>
+		<style type="text/css">
+			#_copy{align-items:center;background:#4494d5;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-size:13px;height:30px;justify-content:center;position:absolute;width:60px;z-index:1000}#select-tooltip,#sfModal,.modal-backdrop,div[id^=reader-helper]{display:none!important}.modal-open{overflow:auto!important}._sf_adjust_body{padding-right:0!important}.enable_copy_btns_div{position:fixed;width:154px;left:10px;top:45%;background:#e7f1ff;border:2px
+			solid #4595d5;font-weight:600;border-radius:2px;font-family:-apple-system,BlinkMacSystemFont,Segoe
+			UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple
+			Color Emoji,Segoe UI Emoji,Segoe UI Symbol;z-index:5000}.enable_copy_btns_logo{width:100%;background:#4595d5;text-align:center;font-size:12px;color:#e7f1ff;line-height:30px;height:30px}.enable_copy_btns_btn{display:block;width:128px;height:28px;background:#7f5711;border-radius:4px;color:#fff;font-size:12px;border:0;outline:0;margin:8px
+			auto;font-weight:700;cursor:pointer;opacity:.9}.enable_copy_btns_btn:hover{opacity:.8}.enable_copy_btns_btn:active{opacity:1}
+		</style>
+		<script type="text/javascript" charset="utf-8" async="" src="theme-slim-chameleon-eed7619.js">
+		</script>
+		<style type="text/css">
+			.tpwthwidt .baseText_1_3bHEo{font-family:PingFang SC,Microsoft YaHei UI
+			Light,STHeitiSC-Light,Microsoft YaHei UI,Microsoft YaHei;font-size:14px;color:#fff}.tpwthwidt
+			.weakText_3uu3-T2{font-size:12px;color:hsla(0,0%,100%,.6)}.tpwthwidt .strongText_3qGTP22{font-family:PingFangSC-Light,Microsoft
+			YaHei UI Light,Microsoft YaHei UI,Microsoft YaHei}.tpwthwidt .hugeText_1pUToPy{font-family:Avenir
+			Next,PingFang SC,Helverica-light,Segoe UI,Century Gothic,Arial;font-size:48px}.tpwthwidt
+			.enText_2c8u9XA{font-size:12px}.tpwthwidt .flexItem_2yoAzox{display:inline-table;width:33%}.tpwthwidt
+			.badge_1lZ0Hv9{display:inline-block;padding:4px 9px 4px 6px}.tpwthwidt
+			.badge_1lZ0Hv9,.tpwthwidt .circle_2cfr_iz{margin:3px;line-height:14px;border-radius:12px;background-color:rgba(0,0,0,.2);white-space:nowrap}.tpwthwidt
+			.circle_2cfr_iz{display:-ms-inline-flexbox;display:inline-flex;padding:4px}.tpwthwidt
+			.textCenter_3BDIpiC{text-align:center}.tpwthwidt .textLeft_1LB3FB6{text-align:left}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .middle_3YS7v8r{margin-top:-4px;text-align:left}.tpwthwidt
+			.iconHuge_34EV9eP{display:inline-block;margin:0 0 0 16px}.tpwthwidt .now_uYb6C_X{display:inline-block;margin:-6px
+			0 0 16px}.tpwthwidt .extra_1vRGAxX{display:inline-block;float:right}.tpwthwidt
+			.bottom_1TXPMSL{bottom:0;width:100%;position:absolute}.tpwthwidt .alarmPane_3bYqCwz{margin-left:16px}@media
+			screen and (min-height:801px),screen and (min-width:481px){.tpwthwidt .extra_1vRGAxX{margin:0
+			16px 0 0}.tpwthwidt .daily_3Q5N3SV{margin-top:10px;padding:16px 0 14px}.tpwthwidt
+			.copyright_17nocqQ{padding:0 0 14px}}@media screen and (max-width:480px)
+			and (max-height:800px){.tpwthwidt .extra_1vRGAxX{padding:10px 0}.tpwthwidt
+			.daily_3Q5N3SV{padding:12px 0}.tpwthwidt .copyright_17nocqQ{padding:0 0
+			14px}}@media screen and (max-width:320px) and (max-height:800px){.tpwthwidt
+			.extra_1vRGAxX{padding:6px 0}.tpwthwidt .daily_3Q5N3SV{padding:12px 0 8px}.tpwthwidt
+			.copyright_17nocqQ{padding:0 0 14px}}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .cover_3Ren-cz{position:relative;display:inline-block;display:block;opacity:1}.tpwthwidt
+			.front_1E25Bfr{position:absolute;margin-top:6px;width:290px;border-radius:4px;background:hsla(0,0%,5%,.95);box-shadow:0
+			2px 20px rgba(0,0,0,.15);z-index:2147483600;visibility:hidden;opacity:0;transition:visibility
+			0s .2s,opacity 0s .2s}@media screen and (min-height:801px),screen and (min-width:481px){.tpwthwidt
+			.widgetAlarmed_iz59kzF:hover{width:290px!important;height:484px!important}.tpwthwidt
+			.widgetNotAlarmed_215bX9n:hover{width:290px!important;height:454px!important}.tpwthwidt
+			.cover_3Ren-cz:hover .front_1E25Bfr{display:block;visibility:visible;pointer-events:auto;opacity:1;transition:opacity
+			.3s}}@media screen and (max-width:480px) and (max-height:800px){.tpwthwidt
+			.hoveredWidget_1dThQTP{position:fixed;left:0!important;right:0!important;top:0!important;bottom:0!important;width:auto!important;height:auto!important;border-radius:0;opacity:1;overflow-y:hidden;overflow-x:hidden}.tpwthwidt
+			.hoveredFront_1DONPCL{display:block;visibility:visible;pointer-events:auto;opacity:1;overflow:auto;position:absolute;left:0;right:0;top:0;bottom:0;width:auto;height:auto}}.tpwthwidt
+			.widget_1GmlF5Y{background:#fff}.tpwthwidt .widgetBg0_1_H1pRp{background:linear-gradient(#2869e9,#79bfff)}.tpwthwidt
+			.widgetBg1_mcZLmTF{background:linear-gradient(#1b1d5c,#5d428e)}.tpwthwidt
+			.widgetBg2_2_ZfLIM{background:linear-gradient(#2869e9,#79bfff)}.tpwthwidt
+			.widgetBg3_3oiCl_K{background:linear-gradient(#1b1d5c,#5d428e)}.tpwthwidt
+			.widgetBg4_3EzjZAy{background:linear-gradient(#6f7c85,#919b9f)}.tpwthwidt
+			.widgetBg5_fUfj5SS{background:linear-gradient(#2869e9,#79bfff)}.tpwthwidt
+			.widgetBg6_2AUYw4Q{background:linear-gradient(#1b1d5c,#5d428e)}.tpwthwidt
+			.widgetBg7_3tXnQop{background:linear-gradient(#6f7c85,#919b9f)}.tpwthwidt
+			.widgetBg8_1cKEPUZ{background:linear-gradient(#2b2c2d,#6e747b)}.tpwthwidt
+			.widgetBg9_2oANlUz{background:linear-gradient(#6f7c85,#919b9f)}.tpwthwidt
+			.widgetBg10_2RIArdn,.tpwthwidt .widgetBg11_mFaSG3s,.tpwthwidt .widgetBg12_24_Mvu-,.tpwthwidt
+			.widgetBg13_2eSXuui,.tpwthwidt .widgetBg14_39hgeoN,.tpwthwidt .widgetBg15_3gw0xRx,.tpwthwidt
+			.widgetBg19_3xrsXmm,.tpwthwidt .widgetBg20_bcHe3IO{background:linear-gradient(#566b6e,#7d939b)}.tpwthwidt
+			.widgetBg16_2SIXfRy,.tpwthwidt .widgetBg17_3hcHVmT,.tpwthwidt .widgetBg18_2JC1ZM7{background:linear-gradient(#2f4146,#617279)}.tpwthwidt
+			.widgetBg21_2MrdxLZ,.tpwthwidt .widgetBg22_32-Noaf,.tpwthwidt .widgetBg23_1YiNXAT,.tpwthwidt
+			.widgetBg24_2X6FDjQ,.tpwthwidt .widgetBg25_3VtDVNQ{background:linear-gradient(#6f7c85,#919b9f)}.tpwthwidt
+			.widgetBg26_3yy04aR,.tpwthwidt .widgetBg27_3ttiyvV,.tpwthwidt .widgetBg28_15ADdXT,.tpwthwidt
+			.widgetBg29_2g8dZvx{background:linear-gradient(#9e8a47,#ccb166)}.tpwthwidt
+			.widgetBg30_1qPNSft{background:linear-gradient(#6f7c85,#919b9f)}.tpwthwidt
+			.widgetBg31_38bBnMK{background:linear-gradient(#6c6c6c,#959595)}.tpwthwidt
+			.widgetBg32_1G51lqn,.tpwthwidt .widgetBg33_3U4P4MK{background:linear-gradient(#2869e9,#79bfff)}.tpwthwidt
+			.widgetBg34_oPpYZmI,.tpwthwidt .widgetBg35_3SQqawq,.tpwthwidt .widgetBg36_mFZahNZ{background:linear-gradient(#2f4146,#617279)}.tpwthwidt
+			.widgetBg37_2ImDeTa{background:linear-gradient(#69a9e8,#b5dafb)}.tpwthwidt
+			.widgetBg38_3_TRlrc{background:linear-gradient(#e7592b,#fba42f)}.tpwthwidt
+			.widgetBg99_1W7zSJs{background:linear-gradient(#6f7c85,#919b9f)}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .iconSmall_3uUGnaW{width:20px;height:20px;background-size:20px
+			20px;background-repeat:no-repeat}.tpwthwidt .iconMiddle_1mBsy6q{width:24px;height:24px;background-size:24px
+			24px;background-repeat:no-repeat}.tpwthwidt .iconHuge_27FZkjg{width:56px;height:56px;background-size:56px
+			56px;background-repeat:no-repeat}.tpwthwidt .icon0_2cGfqBc{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPjA8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHX+m7mOiupOiDjOaZryIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4wMDAwMDAsIC04MC4wMDAwMDApIiBmaWxsPSIjRjJENzE2Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTIxNiwxMDIgQzIyMS41MjI4NDcsMTAyIDIyNiw5Ny41MjI4NDc1IDIyNiw5MiBDMjI2LDg2LjQ3NzE1MjUgMjIxLjUyMjg0Nyw4MiAyMTYsODIgQzIxMC40NzcxNTMsODIgMjA2LDg2LjQ3NzE1MjUgMjA2LDkyIEMyMDYsOTcuNTIyODQ3NSAyMTAuNDc3MTUzLDEwMiAyMTYsMTAyIFoiIGlkPSJPdmFsLTE0OSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)}.tpwthwidt
+			.iconHuge0_1lU0Y-m{background-image:url(//cdn.sencdn.com/widget/static/img/0-78366ca.svg)}.tpwthwidt
+			.icon1_36BvCW1{background-image:url(//cdn.sencdn.com/widget/static/img/1-3aebd69.svg)}.tpwthwidt
+			.iconHuge1_2WKL-B7{background-image:url(//cdn.sencdn.com/widget/static/img/1-453b930.svg)}.tpwthwidt
+			.icon2_1MtLVHH{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPjI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHX+m7mOiupOiDjOaZryIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4wMDAwMDAsIC0xNzAuMDAwMDAwKSIgZmlsbD0iI0YyRDcxNiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYsMTkyIEMyMjEuNTIyODQ3LDE5MiAyMjYsMTg3LjUyMjg0NyAyMjYsMTgyIEMyMjYsMTc2LjQ3NzE1MyAyMjEuNTIyODQ3LDE3MiAyMTYsMTcyIEMyMTAuNDc3MTUzLDE3MiAyMDYsMTc2LjQ3NzE1MyAyMDYsMTgyIEMyMDYsMTg3LjUyMjg0NyAyMTAuNDc3MTUzLDE5MiAyMTYsMTkyIFoiIGlkPSJPdmFsLTE0OSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)}.tpwthwidt
+			.iconHuge2_34GuWez{background-image:url(//cdn.sencdn.com/widget/static/img/2-64ca3a9.svg)}.tpwthwidt
+			.icon3_2hgkt9_{background-image:url(//cdn.sencdn.com/widget/static/img/3-550e9da.svg)}.tpwthwidt
+			.iconHuge3_nSXVcUv{background-image:url(//cdn.sencdn.com/widget/static/img/3-88aeaba.svg)}.tpwthwidt
+			.icon4_ehc9lvS{background-image:url(//cdn.sencdn.com/widget/static/img/4-1435398.svg)}.tpwthwidt
+			.iconHuge4_34-VbkW{background-image:url(//cdn.sencdn.com/widget/static/img/4-25bd98c.svg)}.tpwthwidt
+			.icon5_3hsI0aC{background-image:url(//cdn.sencdn.com/widget/static/img/5-bd5f57d.svg)}.tpwthwidt
+			.iconHuge5_1UkBz87{background-image:url(//cdn.sencdn.com/widget/static/img/5-715b9c3.svg)}.tpwthwidt
+			.icon6_3BKExLj{background-image:url(//cdn.sencdn.com/widget/static/img/6-ad6f7f6.svg)}.tpwthwidt
+			.iconHuge6_DR4nkDx{background-image:url(//cdn.sencdn.com/widget/static/img/6-7b95bc6.svg)}.tpwthwidt
+			.icon7_4-qACj6{background-image:url(//cdn.sencdn.com/widget/static/img/7-6cf9c9f.svg)}.tpwthwidt
+			.iconHuge7_22WtS8D{background-image:url(//cdn.sencdn.com/widget/static/img/7-77c8e66.svg)}.tpwthwidt
+			.icon8_1hx_oZQ{background-image:url(//cdn.sencdn.com/widget/static/img/8-3a34267.svg)}.tpwthwidt
+			.iconHuge8_1iBPwOp{background-image:url(//cdn.sencdn.com/widget/static/img/8-0372635.svg)}.tpwthwidt
+			.icon9_2-BGpE4{background-image:url(//cdn.sencdn.com/widget/static/img/9-ef8a7f6.svg)}.tpwthwidt
+			.iconHuge9_2YCf7FF{background-image:url(//cdn.sencdn.com/widget/static/img/9-2c511b7.svg)}.tpwthwidt
+			.icon10_378L4e3{background-image:url(//cdn.sencdn.com/widget/static/img/10-92326b3.svg)}.tpwthwidt
+			.iconHuge10_33YymrY{background-image:url(//cdn.sencdn.com/widget/static/img/10-6211aed.svg)}.tpwthwidt
+			.icon11_vpyaZMn{background-image:url(//cdn.sencdn.com/widget/static/img/11-4e0fb07.svg)}.tpwthwidt
+			.iconHuge11_2f17JQ1{background-image:url(//cdn.sencdn.com/widget/static/img/11-e17252c.svg)}.tpwthwidt
+			.icon12_2iYEdsX{background-image:url(//cdn.sencdn.com/widget/static/img/12-cf8737c.svg)}.tpwthwidt
+			.iconHuge12_2UO0NQF{background-image:url(//cdn.sencdn.com/widget/static/img/12-214f1fc.svg)}.tpwthwidt
+			.icon13_1oedFrN{background-image:url(//cdn.sencdn.com/widget/static/img/13-63464b7.svg)}.tpwthwidt
+			.iconHuge13_2OW3eFx{background-image:url(//cdn.sencdn.com/widget/static/img/13-0d2dd40.svg)}.tpwthwidt
+			.icon14_JA4lSlk{background-image:url(//cdn.sencdn.com/widget/static/img/14-ea2b50c.svg)}.tpwthwidt
+			.iconHuge14_2YBBlJ9{background-image:url(//cdn.sencdn.com/widget/static/img/14-272b22b.svg)}.tpwthwidt
+			.icon15_1bZ1Kw6{background-image:url(//cdn.sencdn.com/widget/static/img/15-5b5cdd2.svg)}.tpwthwidt
+			.iconHuge15_2Xr3JZS{background-image:url(//cdn.sencdn.com/widget/static/img/15-099e4cc.svg)}.tpwthwidt
+			.icon16_CnREc9h{background-image:url(//cdn.sencdn.com/widget/static/img/16-3f11b46.svg)}.tpwthwidt
+			.iconHuge16_33Tgfmm{background-image:url(//cdn.sencdn.com/widget/static/img/16-e08da10.svg)}.tpwthwidt
+			.icon17_tzg32et{background-image:url(//cdn.sencdn.com/widget/static/img/17-a880edb.svg)}.tpwthwidt
+			.iconHuge17_xqTjjtV{background-image:url(//cdn.sencdn.com/widget/static/img/17-e81ec02.svg)}.tpwthwidt
+			.icon18_2Jx7EKD{background-image:url(//cdn.sencdn.com/widget/static/img/18-cc145a0.svg)}.tpwthwidt
+			.iconHuge18_3acok4f{background-image:url(//cdn.sencdn.com/widget/static/img/18-69292fb.svg)}.tpwthwidt
+			.icon19_2OCvgkO{background-image:url(//cdn.sencdn.com/widget/static/img/19-796a761.svg)}.tpwthwidt
+			.iconHuge19_3UNiH7b{background-image:url(//cdn.sencdn.com/widget/static/img/19-5cb0263.svg)}.tpwthwidt
+			.icon20_2rk4LMk{background-image:url(//cdn.sencdn.com/widget/static/img/20-d084901.svg)}.tpwthwidt
+			.iconHuge20_IrGkv3q{background-image:url(//cdn.sencdn.com/widget/static/img/20-e77f930.svg)}.tpwthwidt
+			.icon21_EJwt5vu{background-image:url(//cdn.sencdn.com/widget/static/img/21-c228663.svg)}.tpwthwidt
+			.iconHuge21_38tkccz{background-image:url(//cdn.sencdn.com/widget/static/img/21-05d7536.svg)}.tpwthwidt
+			.icon22_uFzLrnH{background-image:url(//cdn.sencdn.com/widget/static/img/22-404bc44.svg)}.tpwthwidt
+			.iconHuge22_3IeMVTf{background-image:url(//cdn.sencdn.com/widget/static/img/22-b815302.svg)}.tpwthwidt
+			.icon23_GvHG3xY{background-image:url(//cdn.sencdn.com/widget/static/img/23-d63b3a8.svg)}.tpwthwidt
+			.iconHuge23_-3YYYt0{background-image:url(//cdn.sencdn.com/widget/static/img/23-c4f9d1a.svg)}.tpwthwidt
+			.icon24_17nszkF{background-image:url(//cdn.sencdn.com/widget/static/img/24-3ad2539.svg)}.tpwthwidt
+			.iconHuge24_1If8VTE{background-image:url(//cdn.sencdn.com/widget/static/img/24-c9ef616.svg)}.tpwthwidt
+			.icon25__ekLupt{background-image:url(//cdn.sencdn.com/widget/static/img/25-ae111ec.svg)}.tpwthwidt
+			.iconHuge25_VF34OVH{background-image:url(//cdn.sencdn.com/widget/static/img/25-f7b3f19.svg)}.tpwthwidt
+			.icon26_2lKQjQ4{background-image:url(//cdn.sencdn.com/widget/static/img/26-58a7055.svg)}.tpwthwidt
+			.iconHuge26_HJQ7Qnn{background-image:url(//cdn.sencdn.com/widget/static/img/26-62b86d1.svg)}.tpwthwidt
+			.icon27_3S4V_zQ{background-image:url(//cdn.sencdn.com/widget/static/img/27-0384d85.svg)}.tpwthwidt
+			.iconHuge27_IaSqhRG{background-image:url(//cdn.sencdn.com/widget/static/img/27-f76218b.svg)}.tpwthwidt
+			.icon28_2HCCNNC{background-image:url(//cdn.sencdn.com/widget/static/img/28-3d07603.svg)}.tpwthwidt
+			.iconHuge28_31FdjiT{background-image:url(//cdn.sencdn.com/widget/static/img/28-3bf2f44.svg)}.tpwthwidt
+			.icon29_1r3Avsn{background-image:url(//cdn.sencdn.com/widget/static/img/29-2c0e566.svg)}.tpwthwidt
+			.iconHuge29_22N55bt{background-image:url(//cdn.sencdn.com/widget/static/img/29-5322f7a.svg)}.tpwthwidt
+			.icon30_3bwjRhl{background-image:url(//cdn.sencdn.com/widget/static/img/30-9446a15.svg)}.tpwthwidt
+			.iconHuge30_Q4TibQS{background-image:url(//cdn.sencdn.com/widget/static/img/30-83daec5.svg)}.tpwthwidt
+			.icon31_2mHtwla{background-image:url(//cdn.sencdn.com/widget/static/img/31-7d198c6.svg)}.tpwthwidt
+			.iconHuge31_1J4-kpb{background-image:url(//cdn.sencdn.com/widget/static/img/31-d259d5a.svg)}.tpwthwidt
+			.icon32_1asi9td{background-image:url(//cdn.sencdn.com/widget/static/img/32-e64346f.svg)}.tpwthwidt
+			.iconHuge32_2tBwkcN{background-image:url(//cdn.sencdn.com/widget/static/img/32-33931fa.svg)}.tpwthwidt
+			.icon33_2ExzkUP{background-image:url(//cdn.sencdn.com/widget/static/img/33-68e25f2.svg)}.tpwthwidt
+			.iconHuge33_3j5V8ON{background-image:url(//cdn.sencdn.com/widget/static/img/33-6c261c7.svg)}.tpwthwidt
+			.icon34_S0E1LLn{background-image:url(//cdn.sencdn.com/widget/static/img/34-ed0cd9f.svg)}.tpwthwidt
+			.iconHuge34_34vxfKl{background-image:url(//cdn.sencdn.com/widget/static/img/34-4a07eb6.svg)}.tpwthwidt
+			.icon35_2E2RHbd{background-image:url(//cdn.sencdn.com/widget/static/img/35-f7d0a9a.svg)}.tpwthwidt
+			.iconHuge35_1RzbtCV{background-image:url(//cdn.sencdn.com/widget/static/img/35-b42d87c.svg)}.tpwthwidt
+			.icon36_1flCMIt{background-image:url(//cdn.sencdn.com/widget/static/img/36-ff46251.svg)}.tpwthwidt
+			.iconHuge36_3wfiCor{background-image:url(//cdn.sencdn.com/widget/static/img/36-e4fa014.svg)}.tpwthwidt
+			.icon37_O_JEFaW{background-image:url(//cdn.sencdn.com/widget/static/img/37-1a6e063.svg)}.tpwthwidt
+			.iconHuge37_11FTfPR{background-image:url(//cdn.sencdn.com/widget/static/img/37-18f0c21.svg)}.tpwthwidt
+			.icon38_1YYOcQn{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPjM4PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IuWkqeawlOWbvuaghyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IuWkqeawlOWbvuagh1/pu5jorqTog4zmma8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMDAwMDAwLCAtMjA2MS4wMDAwMDApIiBmaWxsPSIjRjJENzE2Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTIxNiwyMDgzIEMyMjEuNTIyODQ3LDIwODMgMjI2LDIwNzguNTIyODUgMjI2LDIwNzMgQzIyNiwyMDY3LjQ3NzE1IDIyMS41MjI4NDcsMjA2MyAyMTYsMjA2MyBDMjEwLjQ3NzE1MywyMDYzIDIwNiwyMDY3LjQ3NzE1IDIwNiwyMDczIEMyMDYsMjA3OC41MjI4NSAyMTAuNDc3MTUzLDIwODMgMjE2LDIwODMgWiIgaWQ9Ik92YWwtMTQ5Ij48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)}.tpwthwidt
+			.iconHuge38_2IiOibq{background-image:url(//cdn.sencdn.com/widget/static/img/38-d1fe862.svg)}.tpwthwidt
+			.icon99_18xaFPR{background-image:url(//cdn.sencdn.com/widget/static/img/99-5534410.svg)}.tpwthwidt
+			.iconHuge99_w4GJjTD{background-image:url(//cdn.sencdn.com/widget/static/img/99-b8dbbc1.svg)}.tpwthwidt
+			.iconLogo_eAx1dxs{background-image:url(//cdn.sencdn.com/widget/static/img/logo-cbb6bc3.svg)}.tpwthwidt
+			.iconSwitch_dQZBCUU{background-image:url(//cdn.sencdn.com/widget/static/img/switch-1cbe8e0.svg)}.tpwthwidt
+			.iconClose_3Qk2Gcy{background-image:url(//cdn.sencdn.com/widget/static/img/close-631d1df.svg)}.tpwthwidt
+			.iconMore_urHhY2G{background-image:url(//cdn.sencdn.com/widget/static/img/more-9bcd720.svg)}.tpwthwidt
+			.iconFail_3PEvF6H{background-image:url(//cdn.sencdn.com/widget/static/img/fail-ef099f7.svg)}.tpwthwidt
+			.iconError_2E-01ik{background-image:url(//cdn.sencdn.com/widget/static/img/error-a0874c0.svg)}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .temperature_T898uCI{font-size:48px;line-height:64px;margin:0
+			auto}.tpwthwidt .temperature_minus_3Abe-0D{margin-left:-10px}.tpwthwidt
+			.degreeIcon_DvlmZ7m{position:relative;top:-10px;font-size:32px}.tpwthwidt
+			.text_334JYUQ{text-align:center;font-size:16px}.tpwthwidt .icon_30WejOI{width:56px;height:56px;background-size:56px
+			56px}.tpwthwidt .text_334JYUQ{font-size:14px;margin-top:-4px}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .container_1K1dpyW{box-shadow:0 -1px hsla(0,0%,100%,.2)}.tpwthwidt
+			.itemLeftSplitter_38PTpI5{box-shadow:1px 0 hsla(0,0%,100%,.2)}.tpwthwidt
+			.itemRightSplitter_1Wdq_ts{box-shadow:-1px 0 hsla(0,0%,100%,.2)}.tpwthwidt
+			.subtitle1_2y5l4el,.tpwthwidt .title_cVQ7QSA{text-align:center}.tpwthwidt
+			.subtitle2_2fkNSGm{text-align:center}.tpwthwidt .icon_Pz1pRMy{margin:8px
+			auto}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .alarmCircle_14EfbjU,.tpwthwidt .alarmGlanceCircle_2O08S7U{font-family:PingFang
+			SC,Microsoft YaHei UI,STHeitiSC-Light,Microsoft YaHei;font-size:12px}.tpwthwidt
+			.alarmGlanceCircle_2O08S7U{padding:3px!important}.tpwthwidt .alarmCoverBadge_3ekZmAY{font-size:12px}.tpwthwidt
+			.alarmGlanceBadge_gOXlR0o{font-size:12px;padding:3px 8px 3px 5px!important}.tpwthwidt
+			.alarmBadge__boqNN2{font-size:12px}@media screen and (max-width:480px)
+			and (max-height:800px){.tpwthwidt .alarmBadge__boqNN2{font-size:14px}}@media
+			screen and (max-width:320px) and (max-height:800px){.tpwthwidt .alarmBadge__boqNN2{font-size:12px}}.tpwthwidt
+			.tooltip_3C8CsYp{position:relative;display:inline-block}.tpwthwidt .tooltiptext_3mwt_x6{font-size:12px;visibility:hidden;width:180px;background-color:rgba(0,0,0,.85);color:#fff;text-align:center;border-radius:4px;padding:5px;position:absolute;z-index:1;bottom:120%;left:50%;margin-left:-90px}.tpwthwidt
+			.tooltiptext_3mwt_x6:after{content:"";position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:rgba(0,0,0,.85)
+			transparent transparent}.tpwthwidt .tooltip_3C8CsYp:hover .tooltiptext_3mwt_x6{visibility:visible}@font-face{font-family:alarmicon;src:url(//cdn.sencdn.com/widget/static/fonts/alarm-iconfont-703b5a2.eot);src:url(//cdn.sencdn.com/widget/static/fonts/alarm-iconfont-703b5a2.eot#iefix)
+			format("embedded-opentype"),url(//cdn.sencdn.com/widget/static/fonts/alarm-iconfont-899f03d.woff)
+			format("woff"),url(//cdn.sencdn.com/widget/static/fonts/alarm-iconfont-42d6b32.ttf)
+			format("truetype"),url(//cdn.sencdn.com/widget/static/img/alarm-iconfont-3afb00f.svg)
+			format("svg")}.tpwthwidt .icon_3KjHd4y{font-family:alarmicon!important;font-size:14px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}.tpwthwidt
+			.icon-thunder_1bq80Uu:before{content:"\E632"}.tpwthwidt .icon-cold_1Gi61ra:before{content:"\E62C"}.tpwthwidt
+			.icon-hot_1P8m3Ya:before{content:"\E635"}.tpwthwidt .icon-frost_SFI3f-z:before{content:"\E634"}.tpwthwidt
+			.icon-freeze-wire_17-d-_l:before{content:"\E630"}.tpwthwidt .icon-rain_CKSiO1A:before{content:"\E62D"}.tpwthwidt
+			.icon-snow_2pcprCB:before{content:"\E62E"}.tpwthwidt .icon-fog_1gkfvb_:before{content:"\E628"}.tpwthwidt
+			.icon-dry_2Vws14X:before{content:"\E62B"}.tpwthwidt .icon-cold-wave_3tSJZR3:before{content:"\E62A"}.tpwthwidt
+			.icon-typhoon_1WVdriP:before{content:"\E626"}.tpwthwidt .icon-hailstone_2nhl9zA:before{content:"\E625"}.tpwthwidt
+			.icon-haze_2Er_YKR:before{content:"\E633"}.tpwthwidt .icon-freeze-road_KBKG1gA:before{content:"\E631"}.tpwthwidt
+			.icon-duststorm_3D914Vn:before{content:"\E62F"}.tpwthwidt .icon-wind_3RKoFS2:before{content:"\E629"}.tpwthwidt
+			.icon-multi_3PtdTW-:before{content:"\E638"}.tpwthwidt .icon-placeholder_1wLa4lN:before{content:"\E637"}.tpwthwidt
+			.color-10_15t8uLF{color:#62acff}.tpwthwidt .color-20_1A8uADB{color:#ffde00}.tpwthwidt
+			.color-30_2GtnFeq{color:#ff9403}.tpwthwidt .color-40_3z9NLQo{color:#f23030}.tpwthwidt
+			.color-multi_1bCT7dl{color:#ffde00}.tpwthwidt .background-10_1s3Xjrd{background-color:#497df5}.tpwthwidt
+			.background-20_3cexBVs{background-color:#ffde00}.tpwthwidt .background-30_277hxCy{background-color:#ff9403}.tpwthwidt
+			.background-40_yPeouX5{background-color:#f23030}.tpwthwidt .background-multi_1hcQb1F{background-color:rgba(0,0,0,.5);box-shadow:inset
+			0 0 0 1px hsla(0,0%,100%,.3)}.tpwthwidt .background-placeholder_nVjd2gq{background-color:#fff;border:1px
+			dashed gray}.tpwthwidt .iconColor-10_2TWBN0h,.tpwthwidt .iconColor-30_2dr6_wn.text-40_3yW6txy,.tpwthwidt
+			.iconColor-40_2P7zQV8,.tpwthwidt .text-10_3f-dv1g,.tpwthwidt .text-30_23gXFQn,.tpwthwidt
+			.text-multi_3K3mZqV{color:#fff}.tpwthwidt .iconColor-20_13HAUUo,.tpwthwidt
+			.text-20_3uNt_x1{color:#000}.tpwthwidt .iconColor-multi_3KCuvf4{color:#ffde00}.tpwthwidt
+			.text-placeholder_3Hck5lY{color:#585858}.tpwthwidt .iconColor-placeholder_XI3O6kG{color:#cacaca}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .container_TuXCp-j{display:block}.tpwthwidt .wapContainer_2uk_m83{display:none}@media
+			screen and (max-width:480px) and (max-height:800px){.tpwthwidt .container_TuXCp-j{display:none}.tpwthwidt
+			.wapContainer_2uk_m83{display:block}}.tpwthwidt .name_3XpSxaY{margin:14px
+			14px 10px;min-width:86px;display:inline-table}.tpwthwidt .link_2oO2ZtX,.tpwthwidt
+			.title_3KtMYoK{display:inline-block}.tpwthwidt .subtitle_2VdS0_4{display:inline-block;margin-left:5px}.tpwthwidt
+			.icon_2CBiEjZ{width:46px;height:46px;float:right}.tpwthwidt .item_2iPbMiF{float:right}.tpwthwidt
+			.wapIcon2_3S16cyr{width:46px;height:46px;float:right}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .container_A8JAUuC{cursor:pointer;width:150px;margin:0 auto}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .title_1zqlT_y{visibility:hidden;position:absolute;white-space:nowrap;text-overflow:clip;overflow:hidden;font-family:PingFang
+			SC,Microsoft YaHei UI Light,STHeitiSC-Light;font-size:14px;color:#fff}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .container_1xiJRcq{position:fixed;width:86px;height:54px;border-radius:4px;opacity:1;background:hsla(0,0%,5%,.95);box-shadow:0
+			2px 20px rgba(0,0,0,.15);z-index:2147483600}.tpwthwidt .wideContainer_3YV9voI{width:114px}.tpwthwidt
+			.point_2jT9q7j,.tpwthwidt .wideContainerPoint_3DB_yge{cursor:pointer}.tpwthwidt
+			.icon_RMRs6rh,.tpwthwidt .iconError_IIsqqsF{display:inline-block;width:32px;height:32px;background-size:32px
+			32px;margin:10px 0 10px 8px;float:left;background-repeat:no-repeat}.tpwthwidt
+			.context_ynt5sM_{display:inline-block;white-space:nowrap;padding:8px 9px}.tpwthwidt
+			.title_32wDFDe{white-space:nowrap;text-overflow:clip;overflow:hidden}.tpwthwidt
+			.blobContainerInline_3Xga3Lo{position:relative;display:inline-block;width:95px;height:32px}.tpwthwidt
+			.blobContainer_1allvjS{width:100%;height:100%}.tpwthwidt .blob_1g6kbiu{width:10px;height:10px;background:#e5e5e5;border-radius:50%;position:absolute;left:calc(50%
+			- 5px);top:calc(50% - 5px);box-shadow:0 0 5px hsla(0,0%,100%,.15)}.tpwthwidt
+			.blob2_2LK3VIn{animation:animate-to-2_3R6boLs 1.5s infinite}.tpwthwidt
+			.blob3_22txQ8q{animation:animate-to-3_2iPeomH 1.5s infinite}.tpwthwidt
+			.blob1_1rbFiZu{animation:animate-to-1_2BiW8Mn 1.5s infinite}.tpwthwidt
+			.blob4_1erzLZI{animation:animate-to-4_2XM3zfJ 1.5s infinite}.tpwthwidt
+			.blob0_39ZPULg{animation:animate-to-0_Z4o-ySe 1.5s infinite}.tpwthwidt
+			.blob5_2TSLUm-{animation:animate-to-5_1gWyBBF 1.5s infinite}@keyframes
+			animate-to-2_3R6boLs{25%,75%{transform:translateX(-5px) scale(.75)}95%{transform:translateX(0)
+			scale(1)}}@keyframes animate-to-3_2iPeomH{25%,75%{transform:translateX(5px)
+			scale(.75)}95%{transform:translateX(0) scale(1)}}@keyframes animate-to-1_2BiW8Mn{25%{transform:translateX(-5px)
+			scale(.75)}50%,75%{transform:translateX(-15px) scale(.6)}95%{transform:translateX(0)
+			scale(1)}}@keyframes animate-to-4_2XM3zfJ{25%{transform:translateX(5px)
+			scale(.75)}50%,75%{transform:translateX(15px) scale(.6)}95%{transform:translateX(0)
+			scale(1)}}@keyframes animate-to-0_Z4o-ySe{25%{transform:translateX(-5px)
+			scale(.75)}50%{transform:translateX(-15px) scale(.6)}75%{transform:translateX(-25px)
+			scale(.5)}95%{transform:translateX(0) scale(1)}}@keyframes animate-to-5_1gWyBBF{25%{transform:translateX(5px)
+			scale(.75)}50%{transform:translateX(15px) scale(.6)}75%{transform:translateX(25px)
+			scale(.5)}95%{transform:translateX(0) scale(1)}}.tpwthwidt .container_1xiJRcq{background:#a0a1a4}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .item_2X-oFAL,.tpwthwidt .title_3Vdp_7U{text-align:center}.tpwthwidt
+			.info_3OG9zqR{font-size:24px;text-align:center}@media screen and (max-width:480px)
+			and (max-height:800px){.tpwthwidt .info_3OG9zqR{font-size:32px}}@media
+			screen and (max-width:320px) and (max-height:800px){.tpwthwidt .info_3OG9zqR{font-size:24px}}.tpwthwidt
+			.title_3Vdp_7U{margin-top:6px;text-align:left}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .container_1mbUqWZ{display:inline-block}.tpwthwidt .icon_3JsAoz_{display:inline-block;position:relative;top:5px;margin:0
+			4px}.tpwthwidt .text_3dzWiJR,.tpwthwidt .title_3yjHYH9{font-family:PingFang
+			SC,Microsoft YaHei UI,STHeitiSC-Light,Microsoft YaHei;font-size:14px;color:#000;display:inline-block;margin:4px}.tpwthwidt
+			.coverAlarmPane_1mrz5cp{display:inline-block}
+		</style>
+		<style type="text/css">
+			.tpwthwidt .iconSmall_1t-6ny5{width:20px;height:20px;background-size:20px
+			20px;background-repeat:no-repeat}.tpwthwidt .iconMiddle_2kY1-5k{width:24px;height:24px;background-size:24px
+			24px;background-repeat:no-repeat}.tpwthwidt .iconHuge_2pUGVbm{width:56px;height:56px;background-size:56px
+			56px;background-repeat:no-repeat}.tpwthwidt .icon0_l5V7fFp{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPjA8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHX+eZveiJsuiDjOaZryIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4wMDAwMDAsIC04MC4wMDAwMDApIiBmaWxsPSIjRkZENjEwIj4KICAgICAgICAgICAgPHBhdGggZD0iTTIxNiwxMDIgQzIyMS41MjI4NDcsMTAyIDIyNiw5Ny41MjI4NDc1IDIyNiw5MiBDMjI2LDg2LjQ3NzE1MjUgMjIxLjUyMjg0Nyw4MiAyMTYsODIgQzIxMC40NzcxNTMsODIgMjA2LDg2LjQ3NzE1MjUgMjA2LDkyIEMyMDYsOTcuNTIyODQ3NSAyMTAuNDc3MTUzLDEwMiAyMTYsMTAyIFoiIGlkPSJPdmFsLTE0OSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)}.tpwthwidt
+			.iconHuge0_1_RQpui{background-image:url(//cdn.sencdn.com/widget/static/img/0-a24e22e.svg)}.tpwthwidt
+			.icon1_U1HbPjr{background-image:url(//cdn.sencdn.com/widget/static/img/1-1ecbfbb.svg)}.tpwthwidt
+			.iconHuge1_39cTefS{background-image:url(//cdn.sencdn.com/widget/static/img/1-4698537.svg)}.tpwthwidt
+			.icon2_3XsligG{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPjI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i5aSp5rCU5Zu+5qCHX+eZveiJsuiDjOaZryIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4wMDAwMDAsIC0xODAuMDAwMDAwKSIgZmlsbD0iI0ZGRDYxMCI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYsMjAyIEMyMjEuNTIyODQ3LDIwMiAyMjYsMTk3LjUyMjg0NyAyMjYsMTkyIEMyMjYsMTg2LjQ3NzE1MyAyMjEuNTIyODQ3LDE4MiAyMTYsMTgyIEMyMTAuNDc3MTUzLDE4MiAyMDYsMTg2LjQ3NzE1MyAyMDYsMTkyIEMyMDYsMTk3LjUyMjg0NyAyMTAuNDc3MTUzLDIwMiAyMTYsMjAyIFoiIGlkPSJPdmFsLTE0OSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)}.tpwthwidt
+			.iconHuge2_26hCyUL{background-image:url(//cdn.sencdn.com/widget/static/img/2-049595e.svg)}.tpwthwidt
+			.icon3_HJJXJfA{background-image:url(//cdn.sencdn.com/widget/static/img/3-082880e.svg)}.tpwthwidt
+			.iconHuge3_1lzCsMl{background-image:url(//cdn.sencdn.com/widget/static/img/3-c0eccae.svg)}.tpwthwidt
+			.icon4_346IhJX{background-image:url(//cdn.sencdn.com/widget/static/img/4-1c18b8e.svg)}.tpwthwidt
+			.iconHuge4_3Fc0ADJ{background-image:url(//cdn.sencdn.com/widget/static/img/4-fd67ef8.svg)}.tpwthwidt
+			.icon5_2-l5FEQ{background-image:url(//cdn.sencdn.com/widget/static/img/5-4191e7f.svg)}.tpwthwidt
+			.iconHuge5_334vTOJ{background-image:url(//cdn.sencdn.com/widget/static/img/5-75df77f.svg)}.tpwthwidt
+			.icon6_1fx3bi0{background-image:url(//cdn.sencdn.com/widget/static/img/6-258a83d.svg)}.tpwthwidt
+			.iconHuge6_3zFnd7Q{background-image:url(//cdn.sencdn.com/widget/static/img/6-1c63200.svg)}.tpwthwidt
+			.icon7_EqUBKIz{background-image:url(//cdn.sencdn.com/widget/static/img/7-c34a54d.svg)}.tpwthwidt
+			.iconHuge7_1ZmgJvI{background-image:url(//cdn.sencdn.com/widget/static/img/7-36733f2.svg)}.tpwthwidt
+			.icon8_RDnEb6E{background-image:url(//cdn.sencdn.com/widget/static/img/8-6168e43.svg)}.tpwthwidt
+			.iconHuge8_3woI4Gy{background-image:url(//cdn.sencdn.com/widget/static/img/8-87ffe5d.svg)}.tpwthwidt
+			.icon9_pky4k_M{background-image:url(//cdn.sencdn.com/widget/static/img/9-c258734.svg)}.tpwthwidt
+			.iconHuge9_2Owdajr{background-image:url(//cdn.sencdn.com/widget/static/img/9-68952c4.svg)}.tpwthwidt
+			.icon10_3taAg6M{background-image:url(//cdn.sencdn.com/widget/static/img/10-4fcf0ca.svg)}.tpwthwidt
+			.iconHuge10_3kS4zGe{background-image:url(//cdn.sencdn.com/widget/static/img/10-6412292.svg)}.tpwthwidt
+			.icon11_2DgUYox{background-image:url(//cdn.sencdn.com/widget/static/img/11-137a30a.svg)}.tpwthwidt
+			.iconHuge11_Xl1x2ao{background-image:url(//cdn.sencdn.com/widget/static/img/11-af82def.svg)}.tpwthwidt
+			.icon12_C4O05VI{background-image:url(//cdn.sencdn.com/widget/static/img/12-e98ba78.svg)}.tpwthwidt
+			.iconHuge12_S-nioaj{background-image:url(//cdn.sencdn.com/widget/static/img/12-f770c82.svg)}.tpwthwidt
+			.icon13_16Bi6yr{background-image:url(//cdn.sencdn.com/widget/static/img/13-b093ce6.svg)}.tpwthwidt
+			.iconHuge13_3CJUn57{background-image:url(//cdn.sencdn.com/widget/static/img/13-f59439f.svg)}.tpwthwidt
+			.icon14_1bOSSdx{background-image:url(//cdn.sencdn.com/widget/static/img/14-8af637c.svg)}.tpwthwidt
+			.iconHuge14_1SEKlIS{background-image:url(//cdn.sencdn.com/widget/static/img/14-abf152b.svg)}.tpwthwidt
+			.icon15_3J4MQUM{background-image:url(//cdn.sencdn.com/widget/static/img/15-a894089.svg)}.tpwthwidt
+			.iconHuge15_2xBg6W7{background-image:url(//cdn.sencdn.com/widget/static/img/15-4e87031.svg)}.tpwthwidt
+			.icon16_swJq2je{background-image:url(//cdn.sencdn.com/widget/static/img/16-b08b9c1.svg)}.tpwthwidt
+			.iconHuge16_3qJ0rzj{background-image:url(//cdn.sencdn.com/widget/static/img/16-9634738.svg)}.tpwthwidt
+			.icon17_u5PF00P{background-image:url(//cdn.sencdn.com/widget/static/img/17-ce144f8.svg)}.tpwthwidt
+			.iconHuge17_3I-GFP4{background-image:url(//cdn.sencdn.com/widget/static/img/17-c2eaa4a.svg)}.tpwthwidt
+			.icon18_37S00YA{background-image:url(//cdn.sencdn.com/widget/static/img/18-47377c6.svg)}.tpwthwidt
+			.iconHuge18_2XmcxEB{background-image:url(//cdn.sencdn.com/widget/static/img/18-0388a3f.svg)}.tpwthwidt
+			.icon19_2S4pDAh{background-image:url(//cdn.sencdn.com/widget/static/img/19-e54898f.svg)}.tpwthwidt
+			.iconHuge19_3fD6I9i{background-image:url(//cdn.sencdn.com/widget/static/img/19-885a3fd.svg)}.tpwthwidt
+			.icon20_1_SF9gz{background-image:url(//cdn.sencdn.com/widget/static/img/20-5515f72.svg)}.tpwthwidt
+			.iconHuge20_AxM5-RP{background-image:url(//cdn.sencdn.com/widget/static/img/20-9f167fb.svg)}.tpwthwidt
+			.icon21_3iznZrA{background-image:url(//cdn.sencdn.com/widget/static/img/21-1c4b472.svg)}.tpwthwidt
+			.iconHuge21_47nfq44{background-image:url(//cdn.sencdn.com/widget/static/img/21-4552372.svg)}.tpwthwidt
+			.icon22_1da24Dc{background-image:url(//cdn.sencdn.com/widget/static/img/22-a3a117e.svg)}.tpwthwidt
+			.iconHuge22__NRvOxU{background-image:url(//cdn.sencdn.com/widget/static/img/22-ec2046b.svg)}.tpwthwidt
+			.icon23_2sJOlUd{background-image:url(//cdn.sencdn.com/widget/static/img/23-a9af13e.svg)}.tpwthwidt
+			.iconHuge23_LZk2tNE{background-image:url(//cdn.sencdn.com/widget/static/img/23-a1c5aa0.svg)}.tpwthwidt
+			.icon24_19GrKjw{background-image:url(//cdn.sencdn.com/widget/static/img/24-1e97c12.svg)}.tpwthwidt
+			.iconHuge24_2hEevG9{background-image:url(//cdn.sencdn.com/widget/static/img/24-461dcd4.svg)}.tpwthwidt
+			.icon25_2U5eWvA{background-image:url(//cdn.sencdn.com/widget/static/img/25-3a577ee.svg)}.tpwthwidt
+			.iconHuge25_w44tC1d{background-image:url(//cdn.sencdn.com/widget/static/img/25-97e4ade.svg)}.tpwthwidt
+			.icon26_BXJYgPl{background-image:url(//cdn.sencdn.com/widget/static/img/26-529413e.svg)}.tpwthwidt
+			.iconHuge26_3qIHm5A{background-image:url(//cdn.sencdn.com/widget/static/img/26-31f6874.svg)}.tpwthwidt
+			.icon27_1n0nWyW{background-image:url(//cdn.sencdn.com/widget/static/img/27-d0b70db.svg)}.tpwthwidt
+			.iconHuge27_2CkJDrV{background-image:url(//cdn.sencdn.com/widget/static/img/27-117ccac.svg)}.tpwthwidt
+			.icon28_2IKx3HC{background-image:url(//cdn.sencdn.com/widget/static/img/28-2031a1e.svg)}.tpwthwidt
+			.iconHuge28_2bQT_5J{background-image:url(//cdn.sencdn.com/widget/static/img/28-3c8a493.svg)}.tpwthwidt
+			.icon29_3uyEd_X{background-image:url(//cdn.sencdn.com/widget/static/img/29-a20b6e7.svg)}.tpwthwidt
+			.iconHuge29_3jGyFi9{background-image:url(//cdn.sencdn.com/widget/static/img/29-f196437.svg)}.tpwthwidt
+			.icon30_1-tBc-X{background-image:url(//cdn.sencdn.com/widget/static/img/30-1329fb4.svg)}.tpwthwidt
+			.iconHuge30_1l4BaId{background-image:url(//cdn.sencdn.com/widget/static/img/30-cfce49f.svg)}.tpwthwidt
+			.icon31_3eqN9aS{background-image:url(//cdn.sencdn.com/widget/static/img/31-a3223bc.svg)}.tpwthwidt
+			.iconHuge31_2q1qyK5{background-image:url(//cdn.sencdn.com/widget/static/img/31-b7eeb8a.svg)}.tpwthwidt
+			.icon32_1pGCgLR{background-image:url(//cdn.sencdn.com/widget/static/img/32-9605b79.svg)}.tpwthwidt
+			.iconHuge32_3mq0Muu{background-image:url(//cdn.sencdn.com/widget/static/img/32-b53d39a.svg)}.tpwthwidt
+			.icon33_EH25hY8{background-image:url(//cdn.sencdn.com/widget/static/img/33-e530393.svg)}.tpwthwidt
+			.iconHuge33_3I0gqyf{background-image:url(//cdn.sencdn.com/widget/static/img/33-7c279e2.svg)}.tpwthwidt
+			.icon34_1PXLAWP{background-image:url(//cdn.sencdn.com/widget/static/img/34-478e7b4.svg)}.tpwthwidt
+			.iconHuge34_27ljOsd{background-image:url(//cdn.sencdn.com/widget/static/img/34-07f55a0.svg)}.tpwthwidt
+			.icon35_T-1tyYS{background-image:url(//cdn.sencdn.com/widget/static/img/35-ea49cb3.svg)}.tpwthwidt
+			.iconHuge35_3d3Q8bK{background-image:url(//cdn.sencdn.com/widget/static/img/35-5db6b43.svg)}.tpwthwidt
+			.icon36_3BGhMuj{background-image:url(//cdn.sencdn.com/widget/static/img/36-37dfc12.svg)}.tpwthwidt
+			.iconHuge36_ZrNlB4z{background-image:url(//cdn.sencdn.com/widget/static/img/36-71a89c2.svg)}.tpwthwidt
+			.icon37_1XoGrES{background-image:url(//cdn.sencdn.com/widget/static/img/37-fe19b84.svg)}.tpwthwidt
+			.iconHuge37_3p9brWu{background-image:url(//cdn.sencdn.com/widget/static/img/37-b93410c.svg)}.tpwthwidt
+			.icon38_1xCfiJG{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPjM4PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IuWkqeawlOWbvuaghyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IuWkqeawlOWbvuagh1/nmb3oibLog4zmma8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMDAwMDAwLCAtMjA0Ni4wMDAwMDApIiBmaWxsPSIjRkZEODBCIj4KICAgICAgICAgICAgPHBhdGggZD0iTTIxNiwyMDY4IEMyMjEuNTIyODQ3LDIwNjggMjI2LDIwNjMuNTIyODUgMjI2LDIwNTggQzIyNiwyMDUyLjQ3NzE1IDIyMS41MjI4NDcsMjA0OCAyMTYsMjA0OCBDMjEwLjQ3NzE1MywyMDQ4IDIwNiwyMDUyLjQ3NzE1IDIwNiwyMDU4IEMyMDYsMjA2My41MjI4NSAyMTAuNDc3MTUzLDIwNjggMjE2LDIwNjggWiIgaWQ9Ik92YWwtMTQ5Ij48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)}.tpwthwidt
+			.iconHuge38_1ifwVqc{background-image:url(//cdn.sencdn.com/widget/static/img/38-157a585.svg)}.tpwthwidt
+			.icon99_1D3dd1L{background-image:url(//cdn.sencdn.com/widget/static/img/99-cf0bbee.svg)}.tpwthwidt
+			.iconHuge99_PZ1t0eS{background-image:url(//cdn.sencdn.com/widget/static/img/99-949bc44.svg)}.tpwthwidt
+			.iconLogo_1t7RjZD{background-image:url(//cdn.sencdn.com/widget/static/img/logo-3c903c8.svg)}.tpwthwidt
+			.iconSwitch_KbEkXL-{background-image:url(//cdn.sencdn.com/widget/static/img/switch-64c292c.svg)}.tpwthwidt
+			.iconClose_1SSOQMa{background-image:url(//cdn.sencdn.com/widget/static/img/close-3d60319.svg)}.tpwthwidt
+			.iconMore_3ijH1XU{background-image:url(//cdn.sencdn.com/widget/static/img/more-6763be1.svg)}.tpwthwidt
+			.iconFail_3PoODdc{background-image:url(//cdn.sencdn.com/widget/static/img/fail-529c0c6.svg)}.tpwthwidt
+			.iconError_MAGnO1q{background-image:url(//cdn.sencdn.com/widget/static/img/error-8070566.svg)}
+		</style>
+	</head>
+	
+	<body id="body" class="fix-padding skt-loading" inmaintabuse="1">
+		<!-- aside -->
+		<div id="alllayout" class="app app-aside-fix container app-header-fixed">
+			<!-- headnav -->
+			<header id="header" class="app-header navbar box-shadow-bottom-lg fix-padding"
+			role="menu">
+				<!-- navbar header（交集处） -->
+				<div id="header_left" class="text-ellipsis navbar-header bg-light">
+					<button class="pull-right visible-xs" ui-toggle-class="show animated animated-lento fadeIn"
+					target=".navbar-collapse">
+						<span class="menu-icons">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+							fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="feather feather-search">
+								<circle cx="11" cy="11" r="8">
+								</circle>
+								<line x1="21" y1="21" x2="16.65" y2="16.65">
+								</line>
+							</svg>
+						</span>
+					</button>
+					<button class="pull-left visible-xs active" ui-toggle-class="off-screen animated"
+					target=".app-aside" ui-scroll="app">
+						<span class="menu-icons">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+							fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="feather feather-menu">
+								<line x1="3" y1="12" x2="21" y2="12">
+								</line>
+								<line x1="3" y1="6" x2="21" y2="6">
+								</line>
+								<line x1="3" y1="18" x2="21" y2="18">
+								</line>
+							</svg>
+						</span>
+					</button>
+					<!-- brand -->
+					<a href="" class="navbar-brand text-lt">
+						<span id="navbar-brand-day">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+							fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="feather feather-home">
+								<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+								</path>
+								<polyline points="9 22 9 12 15 12 15 22">
+								</polyline>
+							</svg>
+							<span class="hidden-folded m-l-xs">
+								~颖~博客
+							</span>
+						</span>
+					</a>
+					<!-- / brand -->
+				</div>
+				<!-- / navbar header -->
+				<!-- navbar collapse（顶部导航栏） -->
+				<div id="header_right" class="collapse pos-rlt navbar-collapse bg-light">
+					<!-- statitic info-->
+					<ul class="nav navbar-nav hidden-sm">
+						<li class="dropdown pos-stc">
+							<a id="statistic_pane" data-status="false" href="#" data-toggle="dropdown"
+							class="dropdown-toggle feathericons dropdown-toggle" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-pie-chart">
+									<path d="M21.21 15.89A10 10 0 1 1 8 2.83">
+									</path>
+									<path d="M22 12A10 10 0 0 0 12 2v10z">
+									</path>
+								</svg>
+								<span class="caret">
+								</span>
+							</a>
+							<div class="dropdown-menu wrapper w-full bg-white">
+								<div class="row">
+									<div class="col-sm-8 b-l b-light">
+										<div class="m-l-xs m-t-xs  font-bold">
+											动态日历
+										</div>
+										<div class="text-muted m-l-xs " style="font-size: 12px">
+											统计近10个月的博主文章和评论数目
+										</div>
+										<div class="text-center">
+											<nav class="loading-echart text-center m-t-lg m-b-lg">
+												<p class="infinite-scroll-request">
+													<i class="animate-spin fontello fontello-refresh">
+													</i>
+													Loading...
+												</p>
+											</nav>
+											<div id="post-calendar" class="top-echart hide">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 b-l b-light">
+										<div class="m-l-xs m-t-xs m-b-sm font-bold">
+											分类雷达图
+										</div>
+										<div class="text-center">
+											<nav class="loading-echart text-center m-t-lg m-b-lg">
+												<p class="infinite-scroll-request">
+													<i class="animate-spin fontello fontello-refresh">
+													</i>
+													Loading...
+												</p>
+											</nav>
+											<div id="category-radar" class="top-echart hide">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4 b-l b-light">
+										<div class="m-l-xs m-t-xs m-b-sm font-bold">
+											发布统计图
+										</div>
+										<div class="text-center">
+											<nav class="loading-echart text-center m-t-lg m-b-lg">
+												<p class="infinite-scroll-request">
+													<i class="animate-spin fontello fontello-refresh">
+													</i>
+													Loading...
+												</p>
+											</nav>
+											<div id="posts-chart" class="top-echart hide">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 b-l b-light">
+										<div class="m-l-xs m-t-xs m-b-sm font-bold">
+											分类统计图
+										</div>
+										<div class="text-center">
+											<nav class="loading-echart text-center m-t-lg m-b-lg">
+												<p class="infinite-scroll-request">
+													<i class="animate-spin fontello fontello-refresh">
+													</i>
+													Loading...
+												</p>
+											</nav>
+											<div id="categories-chart" class="top-echart hide">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 b-l b-light">
+										<div class="m-l-xs m-t-xs m-b-sm font-bold">
+											标签统计图
+										</div>
+										<div class="text-center">
+											<nav class="loading-echart text-center m-t-lg m-b-lg">
+												<p class="infinite-scroll-request">
+													<i class="animate-spin fontello fontello-refresh">
+													</i>
+													Loading...
+												</p>
+											</nav>
+											<div id="tags-chart" class="top-echart hide">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- search form -->
+					<form id="searchform1" class="searchform navbar-form navbar-form-sm navbar-left shift"
+					method="post" role="search">
+						<div class="form-group">
+							<div class="input-group rounded bg-white-pure box-shadow-wrap-normal">
+								<input autocomplete="off" id="search_input" type="search" name="s" class="transparent rounded form-control input-sm no-borders padder"
+								required="" placeholder="搜索（Ctrl + K）">
+								<!--搜索提示-->
+								<ul id="search_tips_drop" class="search_modal_list overflow-y-auto small-scroll-bar dropdown-menu hide"
+								style="display:
+								block;top:
+								30px; left: 0px;">
+								</ul>
+								<span id="search_submit" class="transparent input-group-btn">
+									<button type="submit" class="transparent btn btn-sm">
+										<span class="feathericons icon-search">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" class="feather feather-search">
+												<circle cx="11" cy="11" r="8">
+												</circle>
+												<line x1="21" y1="21" x2="16.65" y2="16.65">
+												</line>
+											</svg>
+										</span>
+										<span class="feathericons animate-spin  hide spin-search">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" class="feather feather-loader">
+												<line x1="12" y1="2" x2="12" y2="6">
+												</line>
+												<line x1="12" y1="18" x2="12" y2="22">
+												</line>
+												<line x1="4.93" y1="4.93" x2="7.76" y2="7.76">
+												</line>
+												<line x1="16.24" y1="16.24" x2="19.07" y2="19.07">
+												</line>
+												<line x1="2" y1="12" x2="6" y2="12">
+												</line>
+												<line x1="18" y1="12" x2="22" y2="12">
+												</line>
+												<line x1="4.93" y1="19.07" x2="7.76" y2="16.24">
+												</line>
+												<line x1="16.24" y1="7.76" x2="19.07" y2="4.93">
+												</line>
+											</svg>
+										</span>
+									</button>
+								</span>
+							</div>
+							<a class="btn btn-sm  btn-icon open_search_modal_mobile">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-external-link">
+									<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+									</path>
+									<polyline points="15 3 21 3 21 9">
+									</polyline>
+									<line x1="10" y1="14" x2="21" y2="3">
+									</line>
+								</svg>
+							</a>
+						</div>
+					</form>
+					<a href="" style="display: none" id="searchUrl">
+					</a>
+					<!-- 知心天气-->
+					<div id="tp-weather-widget" class="navbar-form navbar-form-sm navbar-left shift">
+						<div class="tpwthwidt" data-reactid=".0">
+							<div class="cover_3Ren-cz container_1mbUqWZ" data-reactid=".0.0">
+								<div class="tpwidget_title_hook title_3yjHYH9" style="color:#C6C6C6;"
+								data-reactid=".0.0.0">
+									广州
+								</div>
+								<div class="tpwidget_icon_hook icon_3JsAoz_ iconSmall_3uUGnaW icon16_swJq2je"
+								data-reactid=".0.0.1">
+								</div>
+								<div class="tpwidget_text_hook text_3dzWiJR" style="color:#C6C6C6;" data-reactid=".0.0.2">
+									25°
+								</div>
+								<div class="tpwidget_alarm_hook coverAlarmPane_1mrz5cp" data-reactid=".0.0.3">
+									<div data-reactid=".0.0.3.0">
+									</div>
+								</div>
+								<div class="front_1E25Bfr widgetBg16_2SIXfRy" data-reactid=".0.0.4:$=10">
+									<div data-reactid=".0.0.4:$=10.0">
+										<div class="container_TuXCp-j flexContainer_1O-3quq textLeft_1LB3FB6"
+										data-reactid=".0.0.4:$=10.0.0">
+											<div class="name_3XpSxaY" data-reactid=".0.0.4:$=10.0.0.0">
+												<div class="title_3KtMYoK baseText_1_3bHEo textLeft_1LB3FB6" data-reactid=".0.0.4:$=10.0.0.0.0">
+													<a class="link_2oO2ZtX baseText_1_3bHEo textLeft_1LB3FB6" href="m.seniverse.com/weather/WS0E9D8WN298?source=widgetV2"
+													data-reactid=".0.0.4:$=10.0.0.0.0.0">
+														广州
+													</a>
+												</div>
+												<div class="subtitle_2VdS0_4 weakText_3uu3-T2 baseText_1_3bHEo textLeft_1LB3FB6"
+												data-reactid=".0.0.4:$=10.0.0.0.1">
+													01:20发布
+												</div>
+											</div>
+										</div>
+										<div class="wapContainer_2uk_m83 flexContainer_1O-3quq textLeft_1LB3FB6"
+										data-reactid=".0.0.4:$=10.0.1">
+											<div class="name_3XpSxaY" data-reactid=".0.0.4:$=10.0.1.0">
+												<div class="title_3KtMYoK baseText_1_3bHEo textLeft_1LB3FB6" data-reactid=".0.0.4:$=10.0.1.0.0">
+													广州
+												</div>
+												<div class="subtitle_2VdS0_4 weakText_3uu3-T2 baseText_1_3bHEo textLeft_1LB3FB6"
+												data-reactid=".0.0.4:$=10.0.1.0.1">
+													01:20发布
+												</div>
+											</div>
+											<div class="item_2iPbMiF flexItem_2yoAzox" data-reactid=".0.0.4:$=10.0.1.1">
+												<div class="wapIcon2_3S16cyr iconClose_3Qk2Gcy" data-reactid=".0.0.4:$=10.0.1.1.0">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="middle_3YS7v8r" data-reactid=".0.0.4:$=10.1">
+										<div style="padding:0 0 8px 0;" data-reactid=".0.0.4:$=10.1.$=10">
+											<div class="iconHuge_27FZkjg iconHuge16_33Tgfmm iconHuge_34EV9eP" data-reactid=".0.0.4:$=10.1.$=10.0">
+											</div>
+											<div class="title_1ytMpa_ now_uYb6C_X" data-reactid=".0.0.4:$=10.1.$=10.1">
+												<span class="temperature_T898uCI hugeText_1pUToPy baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=10.1.0">
+													25
+												</span>
+												<span class="degreeIcon_DvlmZ7m baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=10.1.1">
+													°
+												</span>
+												<div class="text_334JYUQ baseText_1_3bHEo baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=10.1.2">
+													暴雨
+												</div>
+											</div>
+											<div class="extra_1vRGAxX flexContainer_1O-3quq textLeft_1LB3FB6" data-reactid=".0.0.4:$=10.1.$=10.2">
+												<div class="title_3Vdp_7U strongText_3qGTP22 baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=10.2.0">
+													西南风 3级
+												</div>
+												<div class="title_3Vdp_7U strongText_3qGTP22 baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=10.2.1">
+													空气质量 无
+												</div>
+												<div class="title_3Vdp_7U strongText_3qGTP22 baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=10.2.2">
+													相对湿度 95%
+												</div>
+											</div>
+										</div>
+										<div class="alarmPane_3bYqCwz" data-reactid=".0.0.4:$=10.1.$=11">
+											<div data-reactid=".0.0.4:$=10.1.$=11.0">
+											</div>
+										</div>
+										<div class="container_1K1dpyW flexContainer_1O-3quq textCenter_3BDIpiC daily_3Q5N3SV"
+										data-reactid=".0.0.4:$=10.1.$=12">
+											<div class="itemLeftSplitter_38PTpI5 flexItem_2yoAzox" data-reactid=".0.0.4:$=10.1.$=12.0">
+												<div class="title_cVQ7QSA baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.0.0">
+													今天
+												</div>
+												<div class="icon_Pz1pRMy iconMiddle_1mBsy6q icon16_CnREc9h" data-reactid=".0.0.4:$=10.1.$=12.0.1">
+												</div>
+												<div class="subtitle1_2y5l4el baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.0.2">
+													暴雨 / 中雨
+												</div>
+												<div class="subtitle2_2fkNSGm baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.0.3">
+													25°/29°
+												</div>
+											</div>
+											<div class="item_3sFBchO flexItem_2yoAzox" data-reactid=".0.0.4:$=10.1.$=12.1">
+												<div class="title_cVQ7QSA baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.1.0">
+													周四
+												</div>
+												<div class="icon_Pz1pRMy iconMiddle_1mBsy6q icon10_378L4e3" data-reactid=".0.0.4:$=10.1.$=12.1.1">
+												</div>
+												<div class="subtitle1_2y5l4el baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.1.2">
+													阵雨
+												</div>
+												<div class="subtitle2_2fkNSGm baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.1.3">
+													25°/33°
+												</div>
+											</div>
+											<div class="itemRightSplitter_1Wdq_ts flexItem_2yoAzox" data-reactid=".0.0.4:$=10.1.$=12.2">
+												<div class="title_cVQ7QSA baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.2.0">
+													周五
+												</div>
+												<div class="icon_Pz1pRMy iconMiddle_1mBsy6q icon10_378L4e3" data-reactid=".0.0.4:$=10.1.$=12.2.1">
+												</div>
+												<div class="subtitle1_2y5l4el baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.2.2">
+													阵雨
+												</div>
+												<div class="subtitle2_2fkNSGm baseText_1_3bHEo" data-reactid=".0.0.4:$=10.1.$=12.2.3">
+													26°/34°
+												</div>
+											</div>
+										</div>
+										<div class="container_A8JAUuC textCenter_3BDIpiC weakText_3uu3-T2 baseText_1_3bHEo copyright_17nocqQ"
+										data-reactid=".0.0.4:$=10.1.$=13">
+											<span data-reactid=".0.0.4:$=10.1.$=13.0">
+												Powered by
+											</span>
+											<span data-reactid=".0.0.4:$=10.1.$=13.1">
+												心知天气
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						(function(T, h, i, n, k, P, a, g, e) {
+							g = function() {
+								P = h.createElement(i);
+								a = h.getElementsByTagName(i)[0];
+								P.src = k;
+								P.charset = "utf-8";
+								P.async = 1;
+								a.parentNode.insertBefore(P, a)
+							};
+							T["ThinkPageWeatherWidgetObject"] = n;
+							T[n] || (T[n] = function() { (T[n].q = T[n].q || []).push(arguments)
+							});
+							T[n].l = +new Date();
+							if (T.attachEvent) {
+								T.attachEvent("onload", g)
+							} else {
+								T.addEventListener("load", g, false)
+							}
+						} (window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+					</script>
+					<script>
+						tpwidget("init", {
+							"flavor": "slim",
+							"location": "WX4FBXXFKE4F",
+							"geolocation": "enabled",
+							"language": "auto",
+							"unit": "c",
+							"theme": "chameleon",
+							"container": "tp-weather-widget",
+							"bubble": "enabled",
+							"alarmType": "badge",
+							"color": "#C6C6C6",
+							"uid": "P9kLDSM2OALg6EuPA",
+							"hash": "SkZKoyhzcIIl2_wLv"
+						});
+						tpwidget("show");
+					</script>
+					<!-- 知心结束-->
+					<!-- / search form -->
+					<ul class="nav navbar-nav navbar-right">
+						<!--闲言碎语-->
+						<li class="dropdown">
+							<a href="file.html#" data-toggle="dropdown" class="feathericons dropdown-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-twitch">
+									<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7">
+									</path>
+								</svg>
+								<span class="visible-xs-inline">
+									时光机
+								</span>
+								<span class="badge badge-sm up bg-danger pull-right-xs notify_talk">
+								</span>
+							</a>
+							<!-- dropdown -->
+							<div id="small-talk" class="dropdown-menu w-xl animated fadeInUp">
+								<div class="panel bg-white">
+									<div class="panel-heading b-light bg-white">
+										<strong>
+											<span class="nav-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-instagram">
+													<rect x="2" y="2" width="20" height="20" rx="5" ry="5">
+													</rect>
+													<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+													</path>
+													<line x1="17.5" y1="6.5" x2="17.51" y2="6.5">
+													</line>
+												</svg>
+											</span>
+											说说
+										</strong>
+									</div>
+									<div class="list-group" id="smallRecording">
+										
+										<a href="cross.html" class="list-group-item">
+											<span class="clear block m-b-none words_contents">
+												我要是有花不完的钱就好了
+												<br>
+												<small class="text-muted">
+													追吻辰星, 2024 at 08:51 am
+												</small>
+											</span>
+										</a>
+										<a href="cross.html" class="list-group-item">
+											<span class="clear block m-b-none words_contents">
+												在
+												<br>
+												<small class="text-muted">
+													追吻辰星, 2024 at 08:50 am
+												</small>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!--/闲言碎语-->
+						<!--登录管理-->
+						<li class="dropdown" id="easyLogin">
+							<a onclick="return false" data-toggle="dropdown" class="dropdown-toggle clear">
+								<span class="feathericons">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-key">
+										<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+										</path>
+									</svg>
+								</span>
+								<b class="caret">
+								</b>
+								<!--下三角符号-->
+							</a>
+							<!-- dropdown(已经登录) -->
+							<div class="dropdown-menu w-lg wrapper bg-white animated fadeIn" aria-labelledby="navbar-login-dropdown"
+							id="user_panel">
+								<div class="tab-container post_tab" data-stoppropagation="true">
+									<div class="tab-content no-border">
+										<div role="tabpanel" id="login_container" class="tab-pane fade active in">
+											<form id="login_form" action="index.php/action/login?_=2767734ce796d4a20dd43d3591d3edbe"
+											method="post">
+												<div class="form-group">
+													<label for="navbar-login-user">
+														用户名
+													</label>
+													<input type="text" name="name" id="navbar-login-user" class="form-control"
+													placeholder="用户名或电子邮箱">
+												</div>
+												<div class="form-group">
+													<label for="navbar-login-password">
+														密码
+													</label>
+													<input autocomplete="" type="password" name="password" id="navbar-login-password"
+													class="form-control" placeholder="密码">
+												</div>
+												<button style="width: 100%" type="submit" class="user_op_submit btn-rounded box-shadow-wrap-lg btn-gd-primary padder-lg">
+													<span>
+														登录
+													</span>
+													<span class="text-active">
+														登录中...
+													</span>
+													<i class="animate-spin  fontello fontello-spinner hide">
+													</i>
+												</button>
+												<input type="hidden" name="referer" value="">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!--/登录管理-->
+					</ul>
+				</div>
+				<!-- / navbar collapse -->
+			</header>
+			<div id="search_modal" class="modal fade" tabindex="-1" role="dialog"
+			aria-labelledby="mySmallModalLabel">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content box-shadow-wrap-lg">
+						<div class="modal-header">
+							<div class="form-group">
+								<div class="input-group box-shadow-wrap-normal slight-border">
+									<input autocomplete="off" id="search_modal_input" type="search" name="s"
+									class="transparent form-control input-sm padder" required="" placeholder="输入关键词搜索…">
+									<!--搜索提示-->
+									<span id="search_modal_submit" class="transparent input-group-btn">
+										<button type="submit" class="transparent btn btn-sm">
+											<span class="feathericons icon-search">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-search">
+													<circle cx="11" cy="11" r="8">
+													</circle>
+													<line x1="21" y1="21" x2="16.65" y2="16.65">
+													</line>
+												</svg>
+											</span>
+											<span class="feathericons animate-spin  hide spin-search">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-loader">
+													<line x1="12" y1="2" x2="12" y2="6">
+													</line>
+													<line x1="12" y1="18" x2="12" y2="22">
+													</line>
+													<line x1="4.93" y1="4.93" x2="7.76" y2="7.76">
+													</line>
+													<line x1="16.24" y1="16.24" x2="19.07" y2="19.07">
+													</line>
+													<line x1="2" y1="12" x2="6" y2="12">
+													</line>
+													<line x1="18" y1="12" x2="22" y2="12">
+													</line>
+													<line x1="4.93" y1="19.07" x2="7.76" y2="16.24">
+													</line>
+													<line x1="16.24" y1="7.76" x2="19.07" y2="4.93">
+													</line>
+												</svg>
+											</span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="modal-body">
+							<div class="tab-container post_tab">
+								<ul class="nav no-padder b-b scroll-hide" role="tablist">
+									<li class="nav-item active" role="presentation">
+										<a class="nav-link active" style="" data-toggle="tab" role="tab" data-target="#post_search_content">
+											文章
+										</a>
+									</li>
+									<li class="nav-item " role="presentation">
+										<a class="nav-link " style="" data-toggle="tab" role="tab" data-target="#time_search_content">
+											时光机
+										</a>
+									</li>
+								</ul>
+								<div class="tab-content no-border no-padder">
+									<div role="tabpanel" id="post_search_content" class="tab-pane fade active in">
+										<ul id="search_modal_list" class="search_modal_list overflow-y-auto small-scroll-bar dropdown-menu">
+										</ul>
+									</div>
+									<div role="tabpanel" id="time_search_content" class="tab-pane fade">
+										<ul id="time_search_modal_list" class="search_modal_list overflow-y-auto small-scroll-bar dropdown-menu">
+										</ul>
+									</div>
+								</div>
+								<!--tab-content-->
+							</div>
+							<!--tab-container-->
+						</div>
+						<!--modal-body-->
+					</div>
+					<!--modal-content-->
+				</div>
+				<!--modal-dialog-->
+			</div>
+			<!--modal-->
+			<!-- / headnav -->
+			<!--选择侧边栏的颜色-->
+			<aside id="aside" class="gpu-speed app-aside hidden-xs bg-light off-screen animated"
+			style="visibility: visible;">
+				<!--<aside>-->
+				<div class="aside-wrap" layout="column">
+					<div class="navi-wrap scroll-y scroll-hide" flex="">
+						<!-- user -->
+						<div class="clearfix hidden-xs text-center hide  show" id="aside-user"
+						style="visibility: visible;">
+							<div class="dropdown wrapper m-t-sm ">
+								<div ui-nav="">
+									<a href="cross.html">
+										<span class="thumb-lg w-auto-folded avatar  ">
+											<img src="logo.png" class="img-full img-circle">
+											<i class="md b-white bottom hide" id="auto_status" data-toggle="tooltip"
+											data-placement="left" title="" data-original-title="">
+											</i>
+										</span>
+									</a>
+								</div>
+								<a href="" data-toggle="dropdown" class="dropdown-toggle hidden-folded  ">
+									<span class="clear">
+										<span class="block">
+											<strong class="font-bold text-lt">
+												追吻辰星
+											</strong>
+											<b class="caret">
+											</b>
+										</span>
+										<span class="text-muted text-xs block">
+											21 Year
+										</span>
+									</span>
+								</a>
+								<!-- dropdown -->
+								<ul class="dropdown-menu animated fadeInRight w hidden-folded no-padder">
+									<li class="wrapper b-b m-b-sm bg-info m-n">
+										<span class="arrow top hidden-folded arrow-info">
+										</span>
+										<div>
+											<p>欢迎访问
+											</p>
+										</div>
+										<div class="progress progress-xs m-b-none dker">
+											<div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="时间已经度过4.17%"
+											style="width: 4.17%">
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!-- / dropdown -->
+							</div>
+						</div>
+						<!-- / user -->
+						<!-- nav -->
+						<nav ui-nav="" class="navi clearfix">
+							<ul class="nav">
+								<!--index-->
+								<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+									<!-- <span>-->
+									<!--</span>-->
+								</li>
+								<!--主页-->
+								<li class="select">
+									<a href="index.html" class="auto">
+										<span class="nav-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" class="feather feather-home">
+												<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+												</path>
+												<polyline points="9 22 9 12 15 12 15 22">
+												</polyline>
+											</svg>
+										</span>
+										<span>
+											首页
+										</span>
+									</a>
+								</li>
+								<!-- /主页 -->
+								<li class="line dk">
+								</li>
+								<!--Components-->
+								<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+									<!-- <span>-->
+									<!--</span>-->
+								</li>
+								<!--分类category-->
+								<li class="active">
+									<a class="auto select">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text">
+											</i>
+											<i class="fontello icon-fw fontello-angle-down text-active">
+											</i>
+										</span>
+										<!-- <i class="glyphicon glyphicon-th"></i>-->
+										<span class="nav-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" class="feather feather-grid">
+												<rect x="3" y="3" width="7" height="7">
+												</rect>
+												<rect x="14" y="3" width="7" height="7">
+												</rect>
+												<rect x="14" y="14" width="7" height="7">
+												</rect>
+												<rect x="3" y="14" width="7" height="7">
+												</rect>
+											</svg>
+										</span>
+										<span>
+											分类
+										</span>
+									</a>
+									<ul class="nav nav-sub dk">
+										<!-- <li class="nav-sub-header">-->
+										<!-- <a>-->
+										<!-- <span>-->
+										<!--</span>-->
+										<!-- </a>-->
+										<!-- </li>-->
+										<!--循环输出分类-->
+										<li class="category-level-0 category-parent">
+											<a href="">
+												<b class="badge pull-right">
+													2
+												</b>
+												相册
+											</a>
+										</li>
+										
+										
+										
+										
+										<!--/循环输出分类-->
+									</ul>
+								</li>
+								<!--独立页面pages-->
+								<li>
+									<a class="auto">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text">
+											</i>
+											<i class="fontello icon-fw fontello-angle-down text-active">
+											</i>
+										</span>
+										<span class="nav-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" class="feather feather-file">
+												<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z">
+												</path>
+												<polyline points="13 2 13 9 20 9">
+												</polyline>
+											</svg>
+										</span>
+										<span>
+											页面
+										</span>
+									</a>
+									<ul class="nav nav-sub dk">
+									
+										
+										<li>
+											<a href="gd.html">
+												<span>
+													文章归档
+												</span>
+											</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!-- nav -->
+						<!--left_footer-->
+					</div>
+					<!--end of .navi-wrap-->
+				</div>
+				<!--.aside-wrap-->
+			</aside>
+			<!-- content -->
+			<div id="content" class="app-content">
+				<div class="resize-pane">
+					<div id="trigger_left_content" class="trigger_content" style="display: none; left: 220px;">
+						<div class="trigger_drag_content">
+						</div>
+					</div>
+					<div id="trigger_left_button" data-placement="right" data-toggle="tooltip"
+					data-original-title="点击展开左侧边栏" class="normal-widget resize-pane-trigger box-shadow-wrap-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="feather feather-sidebar">
+							<rect x="3" y="3" width="18" height="18" rx="2" ry="2">
+							</rect>
+							<line x1="9" y1="3" x2="9" y2="21">
+							</line>
+						</svg>
+					</div>
+				</div>
+				<!--loading animate-->
+				<div id="loading" class="butterbar active hide">
+					<span class="bar">
+					</span>
+				</div>
+				<!-- / aside -->
+				<!-- <div id="content" class="app-content"> -->
+				<a class="off-screen-toggle hide">
+				</a>
+				<div class="hide" id="post_category">
+					<a href="">
+					</a>
+				</div>
+				<main class="app-content-body animated fadeIn">
+					<div class="hbox hbox-auto-xs hbox-auto-sm">
+						<div class="col center-part gpu-speed" id="post-panel" style="padding-bottom: 0px;">
+							<header class="bg-light lter wrapper-md">
+								<h1 class="m-n font-thin text-black l-h">
+									
+								</h1>
+								
+							</header>
+							<div class="wrapper-md skt-loading">
+								<!--首页输出文章-->
+								<div class="blog-post post-list">
+									<div class="panel-small single-post box-shadow-wrap-normal">
+										<div class="index-post-img-small post-feature index-img-small">
+											<a href="">
+												<div class="item-thumb-small lazy">
+													<img data-original="usr/themes/handsome/assets/img/sj/5.jpg"
+													src="5.jpg" class="post-pic lazy" style="display: block;">
+												</div>
+											</a>
+										</div>
+										<div class="post-meta wrapper-lg padder-v">
+											<div class="post_title_wrapper">
+												<h2 class="m-t-xs text-ellipsis index-post-title text-title">
+													<a href="">
+														解决 Cloudflare cname接入无法验证域名
+													</a>
+												</h2>
+											</div>
+											<!-- end of post_title_wrapper-->
+											<p class="summary l-h-2x text-muted">
+												问题：The hostname is using Cloudflare and cannot be ac...
+											</p>
+											<div class="text-muted post-item-foot post-item-foot-icon text-ellipsis list-inline">
+												<li>
+													<span class="m-r-sm right-small-icons">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+														fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" class="feather feather-user">
+															<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+															</path>
+															<circle cx="12" cy="7" r="4">
+															</circle>
+														</svg>
+													</span>
+													<a href="">
+														追吻辰星
+													</a>
+												</li>
+												<li>
+													<span class="right-small-icons m-r-sm">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+														fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" class="feather feather-clock">
+															<circle cx="12" cy="12" r="10">
+															</circle>
+															<polyline points="12 6 12 12 16 14">
+															</polyline>
+														</svg>
+													</span>
+													2024 年 08 月 19 日
+												</li>
+												<li>
+													<span class="right-small-icons m-r-sm">
+														<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+														fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" class="feather feather-message-square">
+															<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+															</path>
+														</svg>
+													</span>
+													<a href="">
+														暂无评论
+													</a>
+												</li>
+											</div>
+											<!--post-meta wrapper-lg-->
+										</div>
+										<!--text-muted-->
+									</div>
+									
+									
+									<!--panel/panel-small-->
+								</div>
+								<!--分页首页按钮-->
+								
+								<style>
+									.page-navigator>li>a, .page-navigator>li>span{ line-height: 1.42857143;
+									padding: 6px 12px; }
+								</style>
+							</div>
+							<div class="resize-pane">
+								<div id="trigger_right_content" class="trigger_content" style="display: block;">
+									<div class="trigger_drag_content">
+									</div>
+								</div>
+								<div id="trigger_right_button" data-placement="left" data-toggle="tooltip"
+								data-original-title="点击展开右侧边栏" class="normal-widget resize-pane-trigger box-shadow-wrap-lg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="feather feather-sidebar">
+										<rect x="3" y="3" width="18" height="18" rx="2" ry="2">
+										</rect>
+										<line x1="9" y1="3" x2="9" y2="21">
+										</line>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<!--首页右侧栏-->
+						<aside id="rightAside" class="asideBar col w-md bg-white-only bg-auto no-border-xs"
+						role="complementary">
+							<div id="sidebar">
+								
+								<!--博客信息-->
+								<section id="blog_info" class="widget widget_categories wrapper-md padder-v-none clear">
+									<h5 class="widget-title m-t-none">
+										博客信息
+									</h5>
+									<ul class="list-group box-shadow-wrap-normal">
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-award">
+													<circle cx="12" cy="8" r="7">
+													</circle>
+													<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88">
+													</polyline>
+												</svg>
+											</span>
+											<span class="badge
+											pull-right">
+												88
+											</span>
+											文章数目
+										</li>
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-message-circle">
+													<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+													</path>
+												</svg>
+											</span>
+											<span class="badge
+											pull-right">
+												64
+											</span>
+											评论数目
+										</li>
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-calendar">
+													<rect x="3" y="4" width="18" height="18" rx="2" ry="2">
+													</rect>
+													<line x1="16" y1="2" x2="16" y2="6">
+													</line>
+													<line x1="8" y1="2" x2="8" y2="6">
+													</line>
+													<line x1="3" y1="10" x2="21" y2="10">
+													</line>
+												</svg>
+											</span>
+											<span class="badge
+											pull-right">
+												205天
+											</span>
+											运行天数
+										</li>
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-activity">
+													<polyline points="22 12 18 12 15 21 9 3 6 12 2 12">
+													</polyline>
+												</svg>
+											</span>
+											<span class="badge
+											pull-right">
+												1 天前
+											</span>
+											最后活动
+										</li>
+										<!--访客总数代码开始-->
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-users">
+													<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+													</path>
+													<circle cx="9" cy="7" r="4">
+													</circle>
+													<path d="M23 21v-2a4 4 0 0 0-3-3.87">
+													</path>
+													<path d="M16 3.13a4 4 0 0 1 0 7.75">
+													</path>
+												</svg>
+											</span>
+											<span class="badge
+											pull-right">
+												11,077
+											</span>
+											访客总数
+										</li>
+										<!--访客总数代码结束-->
+										<!--响应耗时代码开始-->
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-refresh-ccw">
+													<polyline points="1 4 1 10 7 10">
+													</polyline>
+													<polyline points="23 20 23 14 17 14">
+													</polyline>
+													<path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15">
+													</path>
+												</svg>
+											</span>
+											<span class="badge
+											pull-right">
+												224 ms
+											</span>
+											响应耗时
+										</li>
+										<!--响应耗时代码结束-->
+										<!--全站字数开始-->
+										<li class="list-group-item text-second">
+											<span class="blog-info-icons">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
+												fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="feather feather-edit-2">
+													<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z">
+													</path>
+												</svg>
+											</span>
+											<span class="badge pull-right">
+												13.11 万
+											</span>
+											全站字数
+										</li>
+										<!--全站字数结束-->
+									</ul>
+								</section>
+								<!--非文章页面-->
+								<section id="tag_cloud" class="widget widget_tag_cloud wrapper-md padder-v-none clear">
+									<h5 class="widget-title m-t-none">
+										标签云
+									</h5>
+									<div class="tags l-h-2x panel wrapper-sm padder-v-ssm">
+										<a href="" class="label badge">
+											nas
+										</a>
+										<a href="" class="label badge">
+											n1
+										</a>
+										<a href="" class="label badge">
+											刷机
+										</a>
+										<a href="" class="label badge">
+											openwrt
+										</a>
+										<a href="" class="label badge">
+											路由器
+										</a>
+										<a href="" class="label badge">
+											威联通
+										</a>
+										<a href="" class="label badge">
+											typecho
+										</a>
+										<a href="" class="label badge">
+											电视盒子
+										</a>
+										<a href="" class="label badge">
+											cdn
+										</a>
+										<a href="" class="label badge">
+											cloudflare
+										</a>
+										<a href="" class="label badge">
+											win
+										</a>
+										<a href="" class="label badge">
+											群晖
+										</a>
+										<a href="" class="label badge">
+											小钢炮
+										</a>
+										<a href="" class="label badge">
+											闲聊
+										</a>
+										<a href="" class="label badge">
+											景安
+										</a>
+										<a href="" class="label badge">
+											虚拟主机
+										</a>
+										<a href="" class="label badge">
+											伪静态
+										</a>
+										<a href="" class="label badge">
+											软件
+										</a>
+										<a href="" class="label badge">
+											win软件
+										</a>
+										<a href="" class="label badge">
+											主机
+										</a>
+										<a href="" class="label badge">
+											下载
+										</a>
+										<a href="" class="label badge">
+											远程桌面
+										</a>
+										<a href="" class="label badge">
+											docker
+										</a>
+										<a href="" class="label badge">
+											玩客云
+										</a>
+										<a href="" class="label badge">
+											免费空间
+										</a>
+										<a href="" class="label badge">
+											php
+										</a>
+										<a href="" class="label badge">
+											网站
+										</a>
+										<a href="" class="label badge">
+											github
+										</a>
+										<a href="" class="label badge">
+											运营商
+										</a>
+										<a href="" class="label badge">
+											线路
+										</a>
+									</div>
+								</section>
+							</div>
+						</aside>
+					</div>
+				</main>
+				<!-- footer -->
+			</div>
+			<!-- /content -->
+			<!--right panel-->
+			<script type="text/template" id="tmpl-customizer">
+				< div class = "settings panel panel-default setting_body_panel right_panel"aria - hidden = "true" > <button class = "rightSettingBtn btn btn-default pos-abt border-radius-half-left"data - toggle = "tooltip"data - placement = "left"data - original - title = "外观设置"data - toggle - class = ".settings=active, .settings-icon=animate-spin-span,.tocify-mobile-panel=false" > <span class = "settings-icon" > <i width = "13px"height = "13px"data - feather = "settings" > </i></span > </button>
+            <div class="panel-heading">
+                <button class="mode-set pull-right btn btn-xs btn-rounded btn-danger " name="reset" data-toggle="tooltip"
+                        data-placement="left" data-original-title="恢复默认值" >重置</button > 设置 < /div>
+            <div class="setting_body">
+                <div class="panel-body">
+                    <# for ( var keys = _.keys( data.sections.settings ), i = 0, name; keys.length > i; ++i ) { #>
+                    <div<# if ( i !== ( keys.length - 1 ) ) print( ' class="m-b-sm"' ); else print(' id="mode_set" class="mode_set"')
+                    #>>
+                    <label class="i-switch bg-info pull-right">
+                        <input type="checkbox" name="{{ keys[i] }}" <#
+                        print( ' value="'+handsome_UI.mode+data
+                        .defaults[keys[i]]+'"' )
+                        if ((data.defaults[keys[i]]=="auto" && handsome_UI.mode =="dark") || data
+                        .defaults[keys[i]] == true) print( ' checked="checked"' );
+                        #> / > <i > </i>
+                    </label >
+
+				<span > <#
+				if (data.defaults[keys[i]] == "auto") print(LocalConst.DARK_MODE_AUTO);
+				else if (data.sections.settings[keys[i]] == LocalConst.DARK_MODE) {
+					print(LocalConst.DARK_MODE_FIXED)
+				} else print(data.sections.settings[keys[i]]);# > </span>
+                    <# if ( i == ( keys.length - 1 ) ) {print( ' <small id="auto_info"'); if(data.defaults[keys[i]]!=="auto") print(' style="display:none"') ;print('><i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" data-original-title="网站深色模式自动依据您的设备关于深色模式的设置进行切换"></i > </small>')}; #>
+                </div > <#
+			}# > </div>
+            <div class="wrapper b-t b-light bg-light lter r-b">
+                <div class="row row-sm">
+                    <div class="col-xs-4">
+                        <#
+                        _.each( data.sections.colors, function( color, i ) {
+                        var newColumnBefore = ( i % 5 ) === 4;
+                        #>
+                        <label class="i-checks block<# if ( !newColumnBefore ) print( ' m-b-sm' ); #>">
+                            <input type="radio" name="color" value="{{ i }}"<# if ( data.defaults['color'] === i ) print( ' checked="checked"' ); #> / > <span class = "block bg-light clearfix pos-rlt" > <span class = "active pos-abt w-full h-full bg-black-opacity text-center" > <i class = "fontello fontello-check text-md text-white m-t-xs" > </i>
+								</span > <b class = "{{ color.navbarHeader }} header" > </b>
+								<b class="{{ color.navbarCollapse }} header"></b > <b class = "{{ color.aside.replace( ' b-r', '' ) }}" > </b>
+							</span > </label>
+                        <#
+                        if ( newColumnBefore && ( i + 1 ) < data.sections.colors.length )
+                        print( '</div > <div class = "col-xs-4" > ' );
+                        } );
+                        #>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    '
+			</script>
+			<div class="topButton panel panel-default">
+				<button id="goToTop" class="btn btn-default rightSettingBtn  pos-abt           border-radius-half-left hide"
+				data-toggle="tooltip" data-placement="left" data-original-title="返回顶部">
+					<span class="settings-icon2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="feather feather-corner-right-up">
+							<polyline points="10 9 15 4 20 9">
+							</polyline>
+							<path d="M4 20h7a4 4 0 0 0 4-4V4">
+							</path>
+						</svg>
+					</span>
+					<!-- <i class="fontello fontello-chevron-circle-up" aria-hidden="true"></i>-->
+				</button>
+			</div>
+			<div class="tag_toc_body hide">
+				<div class="tocify-mobile-panel panel panel-default setting_body_panel right_panel"
+				aria-hidden="true">
+					<button class="rightSettingBtn border-radius-half-left btn btn-default pos-abt "
+					data-toggle="tooltip" data-placement="left" data-original-title="目录" data-toggle-class=".tocify-mobile-panel=active,
+					.settings=false">
+						<span class="settings-icon2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 24 24"
+							fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="feather feather-list">
+								<line x1="8" y1="6" x2="21" y2="6">
+								</line>
+								<line x1="8" y1="12" x2="21" y2="12">
+								</line>
+								<line x1="8" y1="18" x2="21" y2="18">
+								</line>
+								<line x1="3" y1="6" x2="3.01" y2="6">
+								</line>
+								<line x1="3" y1="12" x2="3.01" y2="12">
+								</line>
+								<line x1="3" y1="18" x2="3.01" y2="18">
+								</line>
+							</svg>
+						</span>
+					</button>
+					<div class="panel-heading">
+						文章目录
+					</div>
+					<div class="setting_body toc-mobile-body">
+						<div class="panel-body">
+							<div id="tocTree" class="tocTree">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id="footer" class="app-footer" role="footer" style="margin-right: 240px;">
+				<div class="padder-sm bg-white footer_wrapper box-shadow-wrap-normal b-normal">
+					<div class="pull-right hidden-xs text-ellipsis">
+						<a href="typecho.org/" style="margin-left: 5px" target="_blank">
+							<svg style="width: 16px;height: 16px;vertical-align: -4px;" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="26px" viewBox="0 0 30 26"
+							version="1.1">
+								
+							</svg>
+						</a>
+						
+					</div>
+					<span class="text-ellipsis">
+						©&nbsp;2024 All ~颖~.
+						<a href="" target="_blank">
+							QQ:1837601513 
+						</a>
+						<a href="" target="_blank">
+							 QQ:3446228498
+					</span>
+				</div>
+			</footer>
+		</div>
+		<!--end of .app app-header-fixed-->
+		<!--定义全局变量-->
+		<!--主题核心js-->
+		<script src="function.min.js">
+		</script>
+		<script src="core.min.js">
+		</script>
+		<script>
+			$(function() {
+				if ('serviceWorker' in navigator) {
+					if (LocalConst.USE_CACHE) {
+						navigator.serviceWorker.addEventListener('controllerchange',
+						function(ev) {
+							try {
+								if (LocalConst.SERVICE_WORKER_INSTALLED) {
+									$.message({
+										title: "检测到本地缓存需要更新",
+										message: "<a href='#' onclick='window.location.reload();'>点击刷新页面</a>更新本地缓存",
+										type: 'warning',
+										time: '300000'
+									});
+								} else {
+									console.log("controllerchange:first sw install success");
+								}
+							} catch(e) {
+								console.log("controllerchange error", e);
+							}
+						});
+					}
+				}
+			})
+		</script>
+		<!--主题组件js加载-->
+		<script src="jquery.pjax.min.js" type="text/javascript">
+		</script>
+		<!--pjax动画组件-->
+		<script src="lazyload.min.js">
+		</script>
+		<script>
+			$(".lazy").lazyload({
+				effect: "fadeIn",
+				threshold: "500"
+			});
+		</script>
+		<!--截图插件-->
+		<script src="html2canvas.min.js">
+		</script>
+		<!--主题组件js加载结束-->
+		<!--用户自定义js-->
+		<script type="text/javascript">
+			try {
+				/* 复制成功提示代码开始 */
+				kaygb_copy();
+				function kaygb_copy() {
+					$(document).ready(function() {
+						$("body").bind('copy',
+						function(e) {
+							hellolayer()
+						})
+					});
+					var sitesurl = window.location.href;
+					function hellolayer() {
+						$.message({
+							message: "尊重原创，转载请注明出处！<br> 本文作者：追吻辰星<br>原文链接：" + sitesurl,
+							title: "复制成功",
+							type: "warning",
+							autoHide: !1,
+							time: "3000"
+						})
+					}
+				}
+				/* 复制成功提示代码结束 */
+			} catch(e) {
+				handsome_util.settingError("外观设置————开发者设置——自定义js");
+				console.error(e);
+			}
+		</script>
+		<!--顶部彩虹进度条-->
+		<div class="colorTopBar">
+		</div>
+		<script>
+			function kaygb_referrer() {
+				var kaygb_referrer = document.referrer;
+				if (kaygb_referrer != "") {
+					return "感谢您的访问！ 您来自：<br>" + document.referrer;
+				} else {
+					return "";
+				}
+			}
+			$.message({
+				message: "为了网站的正常运行，请不要使用广告屏蔽插件，谢谢！<br >" + kaygb_referrer(),
+				title: "网站加载完成",
+				type: "success",
+				autoHide: !1,
+				time: "3000"
+			})
+		</script>
+		<div class="settings panel panel-default setting_body_panel right_panel"
+		aria-hidden="true">
+			<button class="rightSettingBtn btn btn-default pos-abt border-radius-half-left"
+			data-toggle="tooltip" data-placement="left" data-original-title="外观设置"
+			data-toggle-class=".settings=active, .settings-icon=animate-spin-span,.tocify-mobile-panel=false">
+				<span class="settings-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 24 24"
+					fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" class="feather feather-settings" data-original-title=""
+					title="">
+						<circle cx="12" cy="12" r="3">
+						</circle>
+						<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+						</path>
+					</svg>
+				</span>
+			</button>
+			<div class="panel-heading">
+				<button class="mode-set pull-right btn btn-xs btn-rounded btn-danger "
+				name="reset" data-toggle="tooltip" data-placement="left" data-original-title="恢复默认值">
+					重置
+				</button>
+				设置
+			</div>
+			<div class="setting_body">
+				<div class="panel-body">
+					<div class="m-b-sm">
+						<label class="i-switch bg-info pull-right">
+							<input type="checkbox" name="header-fixed" value="dark1" checked="checked">
+							<i data-original-title="" title="">
+							</i>
+						</label>
+						<span>
+							固定头部
+						</span>
+					</div>
+					<div class="m-b-sm">
+						<label class="i-switch bg-info pull-right">
+							<input type="checkbox" name="aside-fix" value="dark1" checked="checked">
+							<i data-original-title="" title="">
+							</i>
+						</label>
+						<span>
+							固定导航
+						</span>
+					</div>
+					<div class="m-b-sm">
+						<label class="i-switch bg-info pull-right">
+							<input type="checkbox" name="aside-folded" value="dark">
+							<i data-original-title="" title="">
+							</i>
+						</label>
+						<span>
+							折叠导航
+						</span>
+					</div>
+					<div class="m-b-sm">
+						<label class="i-switch bg-info pull-right">
+							<input type="checkbox" name="aside-dock" value="dark">
+							<i data-original-title="" title="">
+							</i>
+						</label>
+						<span>
+							置顶导航
+						</span>
+					</div>
+					<div class="m-b-sm">
+						<label class="i-switch bg-info pull-right">
+							<input type="checkbox" name="layout-boxed" value="dark1" checked="checked">
+							<i data-original-title="" title="">
+							</i>
+						</label>
+						<span>
+							盒子模型
+						</span>
+					</div>
+					<div id="mode_set" class="mode_set">
+						<label class="i-switch bg-info pull-right">
+							<input type="checkbox" name="dark_mode" value="darkauto" checked="checked">
+							<i data-original-title="" title="">
+							</i>
+						</label>
+						<span>
+							深色模式（自动）
+						</span>
+						<small id="auto_info">
+							<i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom"
+							data-original-title="网站深色模式自动依据您的设备关于深色模式的设置进行切换">
+							</i>
+						</small>
+					</div>
+				</div>
+				<div class="wrapper b-t b-light bg-light lter r-b">
+					<div class="row row-sm">
+						<div class="col-xs-4">
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="0">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-black header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-black">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="1">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-dark header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="2">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-black">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="3">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-primary header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block">
+								<input type="radio" name="color" value="4">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-info header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-black">
+									</b>
+								</span>
+							</label>
+						</div>
+						<div class="col-xs-4">
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="5">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-success header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="6">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-danger header">
+									</b>
+									<b class="bg-white-only header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="7">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-black header">
+									</b>
+									<b class="bg-black header">
+									</b>
+									<b class="bg-white">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="8">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-dark header">
+									</b>
+									<b class="bg-dark header">
+									</b>
+									<b class="bg-light">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block">
+								<input type="radio" name="color" value="9">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-info dker header">
+									</b>
+									<b class="bg-info dker header">
+									</b>
+									<b class="bg-light dker">
+									</b>
+								</span>
+							</label>
+						</div>
+						<div class="col-xs-4">
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="10">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-primary header">
+									</b>
+									<b class="bg-primary header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="11">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-info dker header">
+									</b>
+									<b class="bg-info dk header">
+									</b>
+									<b class="bg-black">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="12">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-success header">
+									</b>
+									<b class="bg-success header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block m-b-sm">
+								<input type="radio" name="color" value="13">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-danger header">
+									</b>
+									<b class="bg-danger header">
+									</b>
+									<b class="bg-dark">
+									</b>
+								</span>
+							</label>
+							<label class="i-checks block">
+								<input type="radio" name="color" value="14">
+								<span class="block bg-light clearfix pos-rlt">
+									<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+										<i class="fontello fontello-check text-md text-white m-t-xs" data-original-title=""
+										title="">
+										</i>
+									</span>
+									<b class="bg-light header">
+									</b>
+									<b class="bg-light header">
+									</b>
+									<b class="bg-light">
+									</b>
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chat-gpt-quick-query-container" style="position: relative; z-index: 2147483647;">
+			<div class="css-9vn9g5 ant-app">
+				<div>
+					<span>
+					</span>
+					<span class="ant-dropdown-trigger">
+					</span>
+				</div>
+			</div>
+		</div>
+		</template>
+		</chatgpt-sidebar-popups>
+
+</html>
